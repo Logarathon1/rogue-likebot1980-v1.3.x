@@ -1,0 +1,779 @@
+[	
+	[
+		[
+			"Boss Special Moves",
+			{
+			"type":"Queen Bee",
+			"name":"Will of The Hive",
+			"description":"Blind the player for 3 turns",
+			"attackMultiplier":2,
+			"defenseMultiplier":0,
+			"ignoreDefense":false,
+			"method":0,
+			"slot":1,
+			"reqWeaponID":0,
+			"reqOffhandType":5,
+			"reqTwoHanded":true,
+			"reqOneHanded":false
+			}
+		],
+		[
+			{
+			"type":"Necromancer",
+			"name":"Claimed By Death",
+			"description":"Deal half attack stat as pure damage, if player is under 15% health before casting then there is a 25% chance they immediately die",
+			"attackMultiplier":1,
+			"defenseMultiplier":0,
+			"ignoreDefense":true,
+			"method":1,
+			"chance":0.5,
+			"slot":4,
+			"reqWeaponID":0,
+			"reqOffhandType":5,
+			"reqTwoHanded":false,
+			"reqOneHanded":true
+			}
+		],
+		[
+			{
+			"type":"Paladin Defend",
+			"name":"Steady Block",
+			"description":"Block 2x your defend stat but don't deal any damage",
+			"attackMultiplier":0,
+			"defenseMultiplier":2,
+			"ignoreDefense":false,
+			"method":4,
+			"slot":3,
+			"reqWeaponID":0,
+			"reqOffhandType":1,
+			"reqTwoHanded":false,
+			"reqOneHanded":false
+			}
+		],
+		[
+			{
+			"type":"Hunter Neutral",
+			"name":"Volley",
+			"description":"Fire three ranged shots, for each there is a 66% chance to deal 1x your attack stat, block 0.75x of your defense stat of damage",
+			"attackMultiplier":0.75,
+			"defenseMultiplier":0.75,
+			"ignoreDefense":false,
+			"chance":0.66,
+			"method":5,
+			"count":3,
+			"slot":2,
+			"reqWeaponID":2,
+			"reqOffhandType":5,
+			"reqTwoHanded":false,
+			"reqOneHanded":false
+			}
+		],
+		[
+			{
+			"type":"Lancer Attack",
+			"name":"Guarded Slice",
+			"description":"Deal 1.5x your attack stat as penetrating damage and block 0.5x of your defense stat of damage",
+			"attackMultiplier":1.5,
+			"defenseMultiplier":0.5,
+			"ignoreDefense":true,
+			"method":0,
+			"slot":1,
+			"reqWeaponID":1,
+			"reqOffhandType":5,
+			"reqTwoHanded":false,
+			"reqOneHanded":false
+			}
+		],
+		[
+			{
+			"type":"Brawler Neutral",
+			"name":"Rough Tussle",
+			"description":"Deal 1.25x your attack stat as damage and block 1.25x your defense of damage while also having a 50% chance to evade all damage",
+			"attackMultiplier":1.25,
+			"defenseMultiplier":1.25,
+			"ignoreDefense":false,
+			"method":3,
+			"chance":0.50,
+			"slot":2,
+			"reqWeaponID":3,
+			"reqOffhandType":5,
+			"reqTwoHanded":false,
+			"reqOneHanded":false
+			}
+		],
+		[
+			{
+			"type":"Souless Neutral",
+			"name":"Rough Tussle",
+			"description":"Deal 1.25x your attack stat as damage and block 1.25x your defense of damage while also having a 50% chance to evade all damage",
+			"attackMultiplier":1.25,
+			"defenseMultiplier":1.25,
+			"ignoreDefense":false,
+			"method":3,
+			"chance":0.50,
+			"slot":2,
+			"reqWeaponID":10,
+			"reqOffhandType":5,
+			"reqTwoHanded":false,
+			"reqOneHanded":false
+			}
+		]
+	],
+	
+	[
+		"Melee Attackset 1 - Balanced",
+		{
+		"type":"Attack",
+		"name":"Hard Strike",
+		"messages":[" prepares to charge...",
+					" tenses with intent...",
+					" powers up..."],
+		"description":"Deal 1.5x your attack stat as damage, but leave yourself undefended",
+		"attackMultiplier":1.5,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Neutral",
+		"name":"Balanced Blow",
+		"messages":[" steps forward...",
+					" readies itself...",
+					" begins an attack..."],
+		"description":"Deal your attack stat as damage and block your defense stat of damage",
+		"attackMultiplier":1,
+		"defenseMultiplier":1,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Defend",
+		"name":"Steady Guard",
+		"messages":[" tenses up...",
+					" prepares it's defense...",
+					" raises it's guard..."],
+		"description":"Block 1.5x your defend stat but don't deal any damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":1.5,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Evade",
+		"name":"Dodge Roll",
+		"messages":[" steps back...",
+					" crouches down...",
+					" readies itself..."],
+		"actionName":"dodges",
+		"description":"50% chance to evade all damage, 50% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.5
+		}
+	],
+	
+	[
+		"Melee Attackset 2 - Aggressive",
+		{
+		"type":"Strong Attack",
+		"name":"Vicious Slash",
+		"messages":[" pulls back...",
+					" tenses with intent...",
+					" Prepares to lunge..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":2,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Neutral",
+		"name":"Balanced Blow",
+		"messages":[" steps forward...",
+					" readies itself...",
+					" begins an attack..."],
+		"description":"Deal your attack stat as damage and block your defense stat of damage",
+		"attackMultiplier":1,
+		"defenseMultiplier":1,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Evade",
+		"name":"Dodge Roll",
+		"messages":[" steps back...",
+					" crouches down...",
+					" readies itself..."],
+		"actionName":"dodges",
+		"description":"50% chance to evade all damage, 50% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.5
+		},
+		{
+		"type":"Attack",
+		"name":"Hard Strike",
+		"messages":[" prepares to charge...",
+					" tenses with intent...",
+					" powers up..."],
+		"description":"Deal 1.5x your attack stat as damage, but leave yourself undefended",
+		"attackMultiplier":1.5,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		}
+	],
+	
+	[
+		"Melee Attackset 3 - Defensive",
+		{
+		"type":"Strong Defend",
+		"name":"Strong Block",
+		"messages":["'s body ripples...",
+					" prepares it's defense...",
+					" hunkers down..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":0,
+		"defenseMultiplier":2,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Neutral",
+		"name":"Balanced Blow",
+		"messages":[" steps forward...",
+					" readies itself...",
+					" begins an attack..."],
+		"description":"Deal your attack stat as damage and block your defense stat of damage",
+		"attackMultiplier":1,
+		"defenseMultiplier":1,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Defend",
+		"name":"Steady Guard",
+		"messages":[" tenses up...",
+					" prepares it's defense...",
+					" raises it's guard..."],
+		"description":"Block 1.5x your defend stat but don't deal any damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":1.5,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Strong Neutral",
+		"name":"Guarded Slam",
+		"messages":[" prepares to counter...",
+					" watches carefully...",
+					" powers up..."],
+		"description":"Deal 1.5x your attack stat as damage, but leave yourself undefended",
+		"attackMultiplier":1.5,
+		"defenseMultiplier":1.5,
+		"ignoreDefense":false,
+		"method":0
+		}
+	],
+	
+	[
+		"Melee Attackset 4 - Evasive",
+		{
+		"type":"Evasive Attack",
+		"name":"Side Slash",
+		"messages":[" moves misdirectingly...",
+					" prepares a counter...",
+					" begins an attack..."],
+		"description":"Deal 1.5x your attack stat as damage and block for 0x your defense stat but also have a 25% chance to evade all damage",
+		"attackMultiplier":1.25,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":3,
+		"chance":0.4
+		},
+		{
+		"type":"None",
+		"name":"Stop",
+		"messages":[" slows down...",
+					" prepares to stop...",
+					" pulls back..."],
+		"description":"Does nothing",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Evade",
+		"name":"Dodge Roll",
+		"messages":[" steps back...",
+					" crouches down...",
+					" readies itself..."],
+		"actionName":"dodges",
+		"description":"50% chance to evade all damage, 50% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.6
+		},
+		{
+		"type":"Strong Evade",
+		"name":"Super Dodge",
+		"messages":[" observes the Explorer's movements...",
+					" prepares a counter...",
+					" crouches down"],
+		"actionName":"super dodges",
+		"description":"80% chance to evade all damage, 20% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.8
+		}
+	],
+	
+	[
+		"Melee Boss Attackset 1 - Balanced",
+		{
+		"type":"Strong Attack",
+		"name":"Vicious Slash",
+		"messages":[" pulls back...",
+					" tenses with intent...",
+					" Prepares to lunge..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":2,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Neutral",
+		"name":"Guarded Slam",
+		"messages":[" prepares to counter...",
+					" watches carefully...",
+					" powers up..."],
+		"description":"Deal 1.5x your attack stat as damage, but leave yourself undefended",
+		"attackMultiplier":1.5,
+		"defenseMultiplier":1.5,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Defend",
+		"name":"Strong Block",
+		"messages":["'s body ripples...",
+					" prepares it's defense...",
+					" hunkers down..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":0,
+		"defenseMultiplier":2,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Strong Evade",
+		"name":"Super Dodge",
+		"messages":[" observes the Explorer's movements...",
+					" prepares a counter...",
+					" crouches down"],
+		"actionName":"dodges",
+		"description":"80% chance to evade all damage, 20% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.8
+		}
+	],
+	
+	[
+		"Melee Boss Attackset 2 - Aggressive",
+		{
+		"type":"Strong Attack",
+		"name":"Vicious Slash",
+		"messages":[" pulls back...",
+					" tenses with intent...",
+					" Prepares to lunge..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":2,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Neutral",
+		"name":"Guarded Slam",
+		"messages":[" prepares to counter...",
+					" watches carefully...",
+					" powers up..."],
+		"description":"Deal 1.5x your attack stat as damage, but leave yourself undefended",
+		"attackMultiplier":1.5,
+		"defenseMultiplier":1.5,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Defend",
+		"name":"Strong Block",
+		"messages":["'s body ripples...",
+					" prepares it's defense...",
+					" hunkers down..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":0,
+		"defenseMultiplier":2,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Strong Evade",
+		"name":"Super Dodge",
+		"messages":[" observes the Explorer's movements...",
+					" prepares a counter...",
+					" crouches down"],
+		"actionName":"dodges",
+		"description":"80% chance to evade all damage, 20% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.8
+		}
+	],
+	
+	[
+		"Melee Boss Attackset 3 - Defensive",
+		{
+		"type":"Strong Attack",
+		"name":"Vicious Slash",
+		"messages":[" pulls back...",
+					" tenses with intent...",
+					" Prepares to lunge..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":2,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Neutral",
+		"name":"Guarded Slam",
+		"messages":[" prepares to counter...",
+					" watches carefully...",
+					" powers up..."],
+		"description":"Deal 1.5x your attack stat as damage, but leave yourself undefended",
+		"attackMultiplier":1.5,
+		"defenseMultiplier":1.5,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Defend",
+		"name":"Strong Block",
+		"messages":["'s body ripples...",
+					" prepares it's defense...",
+					" hunkers down..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":0,
+		"defenseMultiplier":2,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Strong Evade",
+		"name":"Super Dodge",
+		"messages":[" observes the Explorer's movements...",
+					" prepares a counter...",
+					" crouches down"],
+		"actionName":"dodges",
+		"description":"80% chance to evade all damage, 20% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.8
+		}
+	],
+	
+	[
+		"Melee Boss Attackset 4 - Evasive",
+		{
+		"type":"Strong Attack",
+		"name":"Vicious Slash",
+		"messages":[" pulls back...",
+					" tenses with intent...",
+					" Prepares to lunge..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":2,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Neutral",
+		"name":"Guarded Slam",
+		"messages":[" prepares to counter...",
+					" watches carefully...",
+					" powers up..."],
+		"description":"Deal 1.5x your attack stat as damage, but leave yourself undefended",
+		"attackMultiplier":1.5,
+		"defenseMultiplier":1.5,
+		"ignoreDefense":false,
+		"method":0
+		},
+		{
+		"type":"Strong Defend",
+		"name":"Strong Block",
+		"messages":["'s body ripples...",
+					" prepares it's defense...",
+					" hunkers down..."],
+		"description":"Deal 2x your attack stat as penetrating damage, but leave yourself undefended",
+		"attackMultiplier":0,
+		"defenseMultiplier":2,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Strong Evade",
+		"name":"Super Dodge",
+		"messages":[" observes the Explorer's movements...",
+					" prepares a counter...",
+					" crouches down"],
+		"actionName":"dodges",
+		"description":"80% chance to evade all damage, 20% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.8
+		}
+	],
+	
+	[
+		"Ranged Attackset 1 - Balanced",
+		{
+		"type":"Attack",
+		"name":"Aimed Shot",
+		"description":"Has an 80% chance to deal 1.25x your attack stat as penetrating damage, but leaves yourself undefended",
+		"attackMultiplier":1.25,
+		"defenseMultiplier":0,
+		"ignoreDefense":true,
+		"method":2,
+		"chance":0.8
+		},
+		{
+		"type":"Neutral",
+		"name":"Steady Shot",
+		"description":"Has a 66% chance to deal your attack stat as damage and block 0.75x of your defend stat of damage",
+		"attackMultiplier":1,
+		"defenseMultiplier":0.75,
+		"ignoreDefense":false,
+		"method":2,
+		"chance":0.66
+		},
+		{
+		"type":"Defend",
+		"name":"Fleeting Cover",
+		"description":"Block 1.25x your defend stat but don't deal any damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":1.25,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Dodge",
+		"name":"Quick Dodge",
+		"actionName":"dodges",
+		"description":"50% chance to evade all damage, 50% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.5
+		}
+	],
+	
+	[
+		"Ranged Attackset 1 - Aggressive",
+		{
+		"type":"Attack",
+		"name":"Aimed Shot",
+		"description":"Has an 80% chance to deal 1.25x your attack stat as penetrating damage, but leaves yourself undefended",
+		"attackMultiplier":1.25,
+		"defenseMultiplier":0,
+		"ignoreDefense":true,
+		"method":2,
+		"chance":0.8
+		},
+		{
+		"type":"Neutral",
+		"name":"Steady Shot",
+		"description":"Has a 66% chance to deal your attack stat as damage and block 0.75x of your defend stat of damage",
+		"attackMultiplier":1,
+		"defenseMultiplier":0.75,
+		"ignoreDefense":false,
+		"method":2,
+		"chance":0.66
+		},
+		{
+		"type":"Defend",
+		"name":"Fleeting Cover",
+		"description":"Block 1.25x your defend stat but don't deal any damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":1.25,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Dodge",
+		"name":"Quick Dodge",
+		"actionName":"dodges",
+		"description":"50% chance to evade all damage, 50% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.5
+		}
+	],
+	
+	[
+		"Ranged Attackset 1 - Defensive",
+		{
+		"type":"Attack",
+		"name":"Aimed Shot",
+		"description":"Has an 80% chance to deal 1.25x your attack stat as penetrating damage, but leaves yourself undefended",
+		"attackMultiplier":1.25,
+		"defenseMultiplier":0,
+		"ignoreDefense":true,
+		"method":2,
+		"chance":0.8
+		},
+		{
+		"type":"Neutral",
+		"name":"Steady Shot",
+		"description":"Has a 66% chance to deal your attack stat as damage and block 0.75x of your defend stat of damage",
+		"attackMultiplier":1,
+		"defenseMultiplier":0.75,
+		"ignoreDefense":false,
+		"method":2,
+		"chance":0.66
+		},
+		{
+		"type":"Defend",
+		"name":"Fleeting Cover",
+		"description":"Block 1.25x your defend stat but don't deal any damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":1.25,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Dodge",
+		"name":"Quick Dodge",
+		"actionName":"dodges",
+		"description":"50% chance to evade all damage, 50% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.5
+		}
+	],
+	
+	[
+		"Ranged Attackset 1 - Evasive",
+		{
+		"type":"Attack",
+		"name":"Aimed Shot",
+		"description":"Has an 80% chance to deal 1.25x your attack stat as penetrating damage, but leaves yourself undefended",
+		"attackMultiplier":1.25,
+		"defenseMultiplier":0,
+		"ignoreDefense":true,
+		"method":2,
+		"chance":0.8
+		},
+		{
+		"type":"Neutral",
+		"name":"Steady Shot",
+		"description":"Has a 66% chance to deal your attack stat as damage and block 0.75x of your defend stat of damage",
+		"attackMultiplier":1,
+		"defenseMultiplier":0.75,
+		"ignoreDefense":false,
+		"method":2,
+		"chance":0.66
+		},
+		{
+		"type":"Defend",
+		"name":"Fleeting Cover",
+		"description":"Block 1.25x your defend stat but don't deal any damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":1.25,
+		"ignoreDefense":false,
+		"method":4
+		},
+		{
+		"type":"Dodge",
+		"name":"Quick Dodge",
+		"actionName":"dodges",
+		"description":"50% chance to evade all damage, 50% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":1,
+		"chance":0.5
+		}
+	],
+	
+	[
+		"Magic Attackset 1",
+		{
+		"type":"Unarmed Attack",
+		"name":"Arcane Blast",
+		"description":"Deal 1x your Red Magic stat and 0.5x your Grey Magic Stat as damage but leave yourself undefended",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":5,
+		"moveColourType":"red"
+		},
+		{
+		"type":"Unarmed Neutral",
+		"name":"Neutral Stance",
+		"description":"Deal 1x your Grey Magic stat as damage and block for 1x your Grey Magic stat",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":5,
+		"moveColourType":"grey"
+		},
+		{
+		"type":"Unarmed Defend",
+		"name":"Mystic Ward",
+		"description":"Block 1.25x your Green Magic stat and heal for 0.25x your Grey Magic Stat but don't deal any damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":5,
+		"moveColourType":"green",
+		"greenMagic":1.25,
+		"greyMagic":0.25,
+		"greyMagicFunction":"heal"
+		},
+		{
+		"type":"Unarmed Dodge",
+		"name":"Phase Spell",
+		"actionName":"phases through",
+		"description":"66% chance to evade all damage, 33% chance to take all damage",
+		"attackMultiplier":0,
+		"defenseMultiplier":0,
+		"ignoreDefense":false,
+		"method":5,
+		"moveColourType":"blue"
+		}
+	]
+]

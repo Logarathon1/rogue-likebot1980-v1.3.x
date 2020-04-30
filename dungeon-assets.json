@@ -1,0 +1,1118 @@
+[
+	{
+	"name":"The Chambers",
+	"id":"legacy-dungeon",
+	"entryMessage":"This stage of The Dungeon is the one the average Explorer would travel in their adventures, stone brick walls, dimly lit rooms and corridors, nothing out of the ordinary here, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"Leaving the corpse of the defeated Dungeon boss, {player.name} makes their way to the now unlocked gate at the far end of the chamber, and pushing aside the heavy stone doors they reveal the next stage of The Dungeon...",
+	"floorMultiplier":5,
+	"floorMin":5,
+	"roomMultiplier":2,
+	"roomMin":2,
+	"floorName":"Floor",
+	"roomName":"Room",
+	"encounters":[2,3,4,5,6,9,11,14],
+	"enemyPrefixes":
+		[
+		{"name":""}
+		],
+	"enemyTypes":
+		[
+			{
+			"name":"Spider",
+			"id":"small-spider",
+			"healthMultiplier":1,
+			"attackMultiplier":1,
+			"defenseMultiplier":1,
+			"attackset":[[8,1],[1,2],[1,5],[3,2],[7,2]],
+			"types":[2],
+			"itemDrops":[{"item":{"name":"Spider Fang"},"count":2,"frequency":0.5}],
+			"entryMessage":"A Spider emerges from a crack in the wall, it scurries towards the Explorer...",
+			"deathMessage":"The Spider turns onto it's back with the Explorer's final blow, legs curled around it's torso..."
+			},
+			{
+			"name":"Bat",
+			"id":"small-bat",
+			"healthMultiplier":1,
+			"attackMultiplier":1,
+			"defenseMultiplier":1,
+			"attackset":[[8,1],[2,2],[7,1],[1,4],[8,1]],
+			"types":[1,2],
+			"itemDrops":[{"item":{"name":"Bat Wing"},"count":2,"frequency":0.5}],
+			"entryMessage":"A Bat swoops down from the ceiling, shrieking as it flutters just overhead...",
+			"deathMessage":"The Bat falls to the ground with a soft thud..."
+			},
+			{
+			"name":"Troll-gre",
+			"id":"troll-ogre",
+			"healthMultiplier":1,
+			"attackMultiplier":1,
+			"defenseMultiplier":1,
+			"attackset":[[8,1],[1,1],[2,2],[3,2],[1,2]],
+			"types":[3],
+			"itemDrops":[{"item":{"name":"Troll-gre Toe"},"count":10,"frequency":0.1}],
+			"entryMessage":"A Troll-gre sits in a corner, picking at the skull of a one-living Explorer...",
+			"deathMessage":"The Troll-gre clutches at it's chest as it backs away into the corner, it's final act before death..."
+			},
+			{
+			"name":"Goblin",
+			"id":"goblin",
+			"healthMultiplier":1,
+			"attackMultiplier":1,
+			"defenseMultiplier":1,
+			"attackset":[[8,1],[1,2],[2,2],[3,2],[7,2]],
+			"types":[],
+			"itemDrops":[{"item":{"name":"Goblin Ear"},"count":2,"frequency":0.5}],
+			"entryMessage":"A Goblin runs circles around the room, clutching a small pile of gold pieces above it's head...",
+			"deathMessage":"The Goblin drops the gold pieces into the puddle of blood at it's feet. It too falls shortly after..."
+			},
+			{
+			"name":"Werehorse",
+			"id":"werehorse",
+			"healthMultiplier":1,
+			"attackMultiplier":1,
+			"defenseMultiplier":1,
+			"attackset":[[8,1],[3,1],[2,2],[3,2],[2,1]],
+			"types":[],
+			"itemDrops":[{"item":{"name":"Werehorse Tooth"},"count":20,"frequency":0.05}],
+			"entryMessage":"A Human stands alone at the room's centre, eyes fixated on a small slit in the roof. It's eyes flick to the Explorer as it morphs into a Werehorse...",
+			"deathMessage":"The Werehorse slams into a wall with the Explorer's final attack, it shrivels back into it's human form..."
+			},
+			{
+			"name":"Owlbear",
+			"id":"owl-bear",
+			"healthMultiplier":1,
+			"attackMultiplier":1,
+			"defenseMultiplier":1,
+			"attackset":[[8,1],[1,1],[2,2],[3,2],[1,2]],
+			"types":[],
+			"itemDrops":[{"item":{"name":"Owlbear Eye"},"count":2,"frequency":0.5}],
+			"entryMessage":"An Owlbear hangs from the ceiling, it's amber eyes locked on the Explorer as it drops from the ceiling and turns around...",
+			"deathMessage":"The Owlbear falls into a heap of fur and feathers, it's amber eyes fade to a dull grey..."
+			},
+			{
+			"name":"Viper",
+			"id":"dungeon-viper",
+			"healthMultiplier":1,
+			"attackMultiplier":1,
+			"defenseMultiplier":1,
+			"attackset":[[8,1],[2,2],[1,5],[7,2]],
+			"types":[2],
+			"itemDrops":[{"item":{"name":"Viper Venom"},"count":1,"frequency":0.5}],
+			"entryMessage":"A Viper sits coiled at the centre of the room, eyeing up the Explorer...",
+			"deathMessage":"The Viper hisses as it writhes in agony, it's dying body coiling back up..."
+			}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Hydra",
+			"id":"hydra-boss",
+			"attackset":[[8,1],[1,1],[2,1],[3,1],[7,1],[8,5]],
+			"types":[3],
+			"entryMessage":"Behind the giant stone doors of the great chamber stands a single-headed Hydra. It looks back at the Explorer with it's evil yellow eyes, fangs bared as it advances, piles of bones cracking underfoot...",
+			"deathMessage":"The Hydra roars as it rears up on it's hind legs, all five of it's heads surging towards the Explorer. They are all cut down in a single blow, bright green blood pouring from the stumps of it's necks. No more heads grow forth, and the body of the beast falls to the floor with a deep thud...",
+			"phases":[
+						{
+						"threshold":0.66,
+						"attackset":[[8,1],[1,1],[2,1],[3,1],[7,1],[8,6]],
+						"typesGain":[],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Explorer's attack severs the Hydra's head, but from the fresh wound comes two more in it's place..."
+						},{
+						"threshold":0.33,
+						"attackset":[[8,1],[1,1],[2,1],[3,1],[7,1],[8,7]],
+						"typesGain":[],
+						"typesLoss":[],
+						"phaseShiftMessage":"In a fit of rage the Hydra tears off it's other head, as well as the two that come to replace them. It then turns all five of it's heads towards the Explorer..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Hydra Head"},"count":1,"frequency":1}]
+			},
+			{
+			"name":"Arraknyyd",
+			"id":"spider-boss",
+			"attackset":[[8,1],[1,1],[2,1],[3,1],[1,5]],
+			"types":[3],
+			"entryMessage":"Behind the giant stone doors of the great chamber lies a huge nest of spider webs covering the walls and ceiling. At the web's centre sits an Arraknyyd, a colossal spider that begins to stretch it's spindly legs towards the Explorer, venom dripping from it's fangs...",
+			"deathMessage":"The Arraknyyd and it's spawn attempt to take one final charge at the Explorer, but the great webs covering every surface of the chamber trip up the great injured spider. Entangled in it's own traps, The Arraknyyd stands no chance against the Explorer. It watches helplessly as death takes it...",
+			"phases":[
+						{
+						"threshold":0.2,
+						"attackset":[[8,1],[1,1],[1,5],[3,1],[8,8]],
+						"typesGain":[],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Arraknyyd's abdomen bursts open with The Explorer's attack, freeing thousands of tiny spiders, all crawling to meet their attacker..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Arraknyyd Silk"},"count":1,"frequency":1}]
+			},
+			{
+			"name":"Colossus",
+			"id":"colossus-boss",
+			"attackset":[[8,1],[3,2],[8,2],[3,1],[2,2]],
+			"types":[3,6],
+			"entryMessage":"Behind the giant stone doors of the great chamber stands a solitary stone statue amidst piles of rubble. The Explorer approaches cautiously, only to be met with the sounds of grinding stone from behind them. They turn around to face an even larger statue approaching them - a stone Colossus. It stretches one of it's megalithic stone arms towards the Explorer...",
+			"deathMessage":"The Colossus quakes as a large chunk of it's body falls to the floor. More pieces begin to follow as the golem's body turns to rubble before the Explorer's eyes. All that remains intact is it's single crimson eye, which stares unblinkingly as it's vanquisher draws nearer...",
+			"phases":[
+						{
+						"threshold":0.5,
+						"attackset":[[8,1],[1,1],[1,2],[8,3],[2,1]],
+						"typesGain":[],
+						"typesLoss":[6],
+						"phaseShiftMessage":"The Colossus's stone body begins to crack, it shakes the ground as it begins to move faster and faster..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Colossus Shard"},"count":1,"frequency":1}]
+			}
+		],
+	"lootPrefixes":
+		[
+		{"name":""}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Broadsword","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":1}},
+			{"name":" Dagger","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":1}},
+			{"name":" Axe","twohanded":true,"imgID":{"lootclass":"equipment","type":"axe","variant":1}},
+			{"name":" Greatsword","twohanded":true,"imgID":{"lootclass":"equipment","type":"sword","variant":2}},
+			{"name":" Scimitar","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":3}},
+			{"name":" Rapier","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":4}},
+			{"name":" Zweihander","twohanded":true,"imgID":{"lootclass":"equipment","type":"sword","variant":5}},
+			{"name":" Falchion","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":6}}
+			],
+			[
+			{"name":" Spear","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":1}},
+			{"name":" Glaive","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":2}},
+			{"name":" Pike","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":3}},
+			{"name":" Lance","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":4}}
+			],
+			[
+			{"name":" Bow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":1}},
+			{"name":" Crossbow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":2}},
+			{"name":" Longbow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":3}},
+			{"name":" Boomerang","twohanded":false,"imgID":{"lootclass":"equipment","type":"bow","variant":4}}
+			],
+			[
+			{"name":" Knuckle-duster","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":1}},
+			{"name":" Combat Gauntlet","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":2}},
+			{"name":" Handwraps","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":3}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Helmet","imgID":{"lootclass":"head","type":"heavy-head","variant":3}},
+			{"name":" Great Helm","imgID":{"lootclass":"head","type":"heavy-head","variant":4}}
+			],
+			[
+			{"name":" Chestplate","imgID":{"lootclass":"chest","type":"heavy-body","variant":3}},
+			{"name":" Platemail","imgID":{"lootclass":"chest","type":"heavy-body","variant":4}},
+			{"name":" Chainmail","imgID":{"lootclass":"chest","type":"light-body","variant":3}},
+			{"name":" Scalemail","imgID":{"lootclass":"chest","type":"light-body","variant":4}},
+			{"name":" Cloak","imgID":{"lootclass":"chest","type":"light-body","variant":5}}
+			],
+			[
+			{"name":" Gauntlets","imgID":{"lootclass":"arms","type":"heavy-arms","variant":3}},
+			{"name":" Gloves","imgID":{"lootclass":"arms","type":"light-arms","variant":3}},
+			{"name":" Bracers","imgID":{"lootclass":"arms","type":"heavy-arms","variant":4}}
+			],
+			[
+			{"name":" Greaves","imgID":{"lootclass":"legs","type":"heavy-legs","variant":3}},
+			{"name":" Boots","imgID":{"lootclass":"legs","type":"light-legs","variant":3}},
+			{"name":" Shoes","imgID":{"lootclass":"legs","type":"light-legs","variant":4}}
+			],
+			[
+			{"name":" Shield","imgID":{"lootclass":"equipment","type":"shield","variant":2}},
+			{"name":" Great Shield","imgID":{"lootclass":"equipment","type":"shield","variant":3}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Talisman","imgID":{"lootclass":"relics","type":"amulet","variant":4}},
+		{"name":" Amulet","imgID":{"lootclass":"relics","type":"amulet","variant":3}},
+		{"name":" Ring","imgID":{"lootclass":"relics","type":"ring","variant":1}},
+		{"name":" Anklet","imgID":{"lootclass":"relics","type":"artifact","variant":8}},
+		{"name":" Fruit","imgID":{"lootclass":"relics","type":"artifact","variant":0}},
+		{"name":" Mask","imgID":{"lootclass":"relics","type":"mask","variant":1}},
+		{"name":" Feather","imgID":{"lootclass":"relics","type":"feather","variant":1}},
+		{"name":" Claw","imgID":{"lootclass":"relics","type":"artifact","variant":1}},
+		{"name":" Horn","imgID":{"lootclass":"relics","type":"artifact","variant":2}},
+		{"name":" Scale","imgID":{"lootclass":"relics","type":"artifact","variant":3}},
+		{"name":" Skull","imgID":{"lootclass":"relics","type":"artifact","variant":4}},
+		{"name":" Jaw","imgID":{"lootclass":"relics","type":"artifact","variant":5}},
+		{"name":" Jewel","imgID":{"lootclass":"relics","type":"artifact","variant":6}},
+		{"name":" Bone","imgID":{"lootclass":"relics","type":"artifact","variant":7}}
+		],
+	"consumables":
+		[
+			[
+			{"name":"Healing Supplies","description":"Various supplies that provide +10 Health","identifier":"[Consumable - +10 HP > Player]","effects":[{"target":0,"method":0,"healthRegen":10}]},
+			{"name":"Ration Scraps","description":" that provide +4 Health","identifier":"[Consumable - +4 HP > Player]","effects":[{"target":0,"method":0,"healthRegen":4}]}
+			],
+			[
+			{"name":"Bottle o' Brawn","description":"A small bottle of yellow fluid that provides +2 Attack","identifier":"[Consumable - +2 ATK > Player]","effects":[{"target":0,"method":1,"attackBoost":2}]}
+			],
+			[
+			{"name":"Shielding Ward","description":"A single-use incantation scroll that provides +2 Defense","identifier":"[Consumable - +2 DEF > Player]","effects":[{"target":0,"method":2,"defenseBoost":2}]}
+			],
+			[
+			{"name":"Transparent Blindfold","description":"A peculiar piece of fabric that grants the user sight","identifier":"[Consumable - Blindness Removal > Player]","effects":[{"target":0,"method":3,"blindness":0}]},
+			{"name":"Antivenom","description":"A small vial of a clear solution said to negate any poison","identifier":"[Consumable - Poison Removal > Player]","effects":[{"target":0,"method":3,"poison":0}]},
+			{"name":"Blue Cape","description":"The mere sight of the cloth provides a calming effect strong enough to soothe even the maddest of minds","identifier":"[Consumable - Madness Removal > Player]","effects":[{"target":0,"method":3,"madness":0}]},
+			{"name":"Bar of Soap","description":"Strong enough to scrub away any decay","identifier":"[Consumable - Decay Removal > Player]","effects":[{"target":0,"method":3,"decay":0}]},
+			{"name":"Holy Water","description":"A cross-shaped flask filled with crystal clear water to quench even the most cursed flames","identifier":"[Consumable - Blaze Removal > Player]","effects":[{"target":0,"method":3,"blaze":0}]},
+			{"name":"Grounded Rod","description":"","identifier":"[Consumable - Shock Removal > Player]","effects":[{"target":0,"method":3,"shock":0}]},
+			{"name":"Red Candle","description":"Though still unlit, a strong warmness emanates from the coloured wax","identifier":"[Consumable - Frost Removal > Player]","effects":[{"target":0,"method":3,"frost":0}]},
+			{"name":"Misshapen Key","description":"","identifier":"[Consumable - Lock Removal > Player]","effects":[{"target":0,"method":3,"lock":0}]}
+			],[
+			],[
+			],[
+			],[
+			],[
+			],[
+			]
+		]
+	},
+	{
+	"name":"The Gate",
+	"id":"final-stage",
+	"entryMessage":"The Explorer enters to find a single solitary figure standing before a fiery black gate. The great long sword it holds looks like a mere knife in it's colossal grip. The Explorer approaches cautiously, unaware of the figure's intentions...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"Leaving the corpse of the defeated Dungeon boss, {player.name} makes their way to the now unlocked gate at the far end of the chamber, and pushing aside the heavy stone doors they reveal the next stage of The Dungeon...",
+	"floorMultiplier":5,
+	"floorMin":5,
+	"roomMultiplier":3,
+	"roomMin":2,
+	"floorName":"Floor",
+	"roomName":"Room",
+	"encounters":[15],
+	"enemyPrefixes":
+		[
+		{"name":"Spider"}
+		],
+	"enemyTypes":
+		[
+		{"name":"Spider","attackset":[[8,1],[1,2],[2,2],[3,2],[7,2]]}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"The Gatekeeper",
+			"id":"gatekeeper",
+			"attackset":[[8,1],[1,2],[2,2],[3,2],[4,2]],
+			"types":[],
+			"phases":[
+					{
+					"threshold":0.9,
+					"attackset":[[8,1],[1,1],[8,2],[8,3],[3,1],[2,2],[8,7],[8,8]],
+					"typesGain":[6,3],
+					"typesLoss":[],
+					"phaseShiftMessage":"The Gatekeeper wills the brick walls into armour around it, taking on the form of The Colossus, The Hydra, and The Arraknyyd all at once. The Dungeon trembles with it's fury...",
+					"nameChange":"The Gatekeeper - Colossal Hydraknyyd Form"
+					},
+					{
+					"threshold":0.8,
+					"attackset":[[8,1],[1,1],[2,1],[3,1],[1,4]],
+					"typesGain":[],
+					"typesLoss":[],
+					"phaseShiftMessage":"The Gatekeeper's stone armour falls around it, revealing the golden armour of The Crime Lord. It slashes it's sword across the floor...",
+					"nameChange":"The Gatekeeper - Crime Lord Form"
+					},
+					{
+					"threshold":0.7,
+					"attackset":[[8,1],[2,3],[2,1],[3,1],[4,5],[8,11]],
+					"typesGain":[],
+					"typesLoss":[],
+					"phaseShiftMessage":"The Gatekeeper steps back, drawing out sludge from the missing bricks in the walls, forming The Sewer Monster in it's place...",
+					"nameChange":"The Gatekeeper - Sewer Monster Form"
+					},
+					{
+					"threshold":0.6,
+					"attackset":[[8,1],[1,7],[2,2],[3,2],[8,12]],
+					"typesGain":[5,0],
+					"typesLoss":[6,3],
+					"phaseShiftMessage":"The sludge falls off The Gatekeeper, this time the ethereal form of The Necromancer stands in it's place, hovering weightlessly over the ground...",
+					"nameChange":"The Gatekeeper - Necromancer Form"
+					},
+					{
+					"threshold":0.5,
+					"attackset":[[8,1],[1,1],[2,1],[4,1],[7,1],[8,3],[8,2]],
+					"typesGain":[1,3,4,6],
+					"typesLoss":[5,0],
+					"phaseShiftMessage":"The Gatekeeper phases into the ceiling, before crashing back through moments later as The Tower Guardian, it's megalithic form bearing down upon the Explorer...",
+					"nameChange":"The Gatekeeper - Tower Guardian Form"
+					},
+					{
+					"threshold":0.4,
+					"attackset":[[8,1],[2,1],[7,1],[1,8],[8,4]],
+					"typesGain":[],
+					"typesLoss":[6],
+					"phaseShiftMessage":"The Gatekeeper collapses to rubble, emerging from the ruins as The Hive Queen and her thousands of bees, buzzing like a storm...",
+					"nameChange":"The Gatekeeper - Hive Queen Form"
+					},
+					{
+					"threshold":0.3,
+					"attackset":[[8,1],[1,1],[2,1],[3,1],[1,9],[8,12]],
+					"typesGain":[],
+					"typesLoss":[1,4],
+					"phaseShiftMessage":"The Gatekeeper brings the swarm around it, sacrificing their countless souls in demonic fire, and calling forth the shape of The Demon Lord with their countless agonized screams...",
+					"nameChange":"The Gatekeeper - Demon Lord Form"
+					},
+					{
+					"threshold":0.2,
+					"attackset":[[8,1],[1,6],[3,3],[4,1],[8,10]],
+					"typesGain":[],
+					"typesLoss":[1,4,3,6],
+					"phaseShiftMessage":"The Gatekeeper's eldritch flames turn to a glowing white beam as it splits itself into The Pyramid Guardians, the three figures race towards the Explorer",
+					"nameChange":"The Gatekeeper - Pyramid Guardian Form"
+					},
+					{
+					"threshold":0.1,
+					"attackset":[[8,1],[1,1],[2,4],[3,1],[4,1]],
+					"typesGain":[],
+					"typesLoss":[1,4,3,6],
+					"phaseShiftMessage":"The Gatekeeper reforms itself from the Guardians. Having exhausted all of it's other forms, it turns to face the Explorer in it's true form - Gatekeeper Adam. It readies it's final stand...",
+					"nameChange":"Gatekeeper Adam - True Form"
+					}
+				 ]
+				}
+		],
+	"lootPrefixes":
+		[
+		{"name":"Spider"}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Sword of Fable","twohanded":false},
+			{"name":" Dagger of Tale","twohanded":false},
+			{"name":" Axe of Myth","twohanded":true},
+			{"name":" Zweihander of Legend","twohanded":true}
+			],
+			[
+			{"name":" Spear of Destiny","twohanded":false},
+			{"name":" Lance of Fate","twohanded":true}
+			],
+			[
+			{"name":" Bow of Dreams","twohanded":true}
+			],
+			[
+			{"name":" Gauntlet of Infinity","twohanded":false}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Mask of All-Seeing"}
+			],
+			[
+			{"name":" Robes of All-Beholding"}
+			],
+			[
+			{"name":" Gloves of All-Grasping"}
+			],
+			[
+			{"name":" Boots of All-Striding"}
+			],
+			[
+			{"name":" Shield of All-Withstanding"}
+			]
+		],
+	"relics":
+		[
+		{"name":" Seed of Hope"}
+		]
+	},
+	{
+	"name":"The City",
+	"id":"city",
+	"entryMessage":"This section of The Dungeon opens out into a large, wide chamber filled with small buildings and towers. It is evident that once there was a thriving city here, but that is no longer the case. Bandits, thieves, and slavers scamper throughout the dark, crime-ridden streets, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"",
+	"floorMultiplier":2,
+	"floorMin":1,
+	"roomMultiplier":8,
+	"roomMin":5,
+	"floorName":"Block",
+	"roomName":"Street",
+	"encounters":[2,3,5,6,9,11,14],
+	"enemyTypes":
+		[
+		{"name":"Bandit","attackset":[[8,1],[2,2],[2,3],[1,4],[7,2]],"types":[],"entryMessage":"A Bandit emerges from an alleyway, it swishes it's shiv aggressively...","deathMessage":"The Bandit's shiv falls to the ground, the Bandit follows with a thud..."},
+		{"name":"Thief","attackset":[[8,1],[2,2],[1,4],[1,2],[7,2]],"types":[2],"entryMessage":"A Thief calls out from behind the Explorer, it's weapon drawn and ready to strike...","deathMessage":"The Thief clutches at it's bleeding body and attempts to flee to a nearby alleyway. It never reaches it..."},
+		{"name":"Outlaw","attackset":[[8,1],[1,2],[1,4],[1,3],[7,2]],"types":[],"entryMessage":"An Outlaw up ahead stands leaning up against a nearby building. Upon seeing the Explorer it draws it's weapon and approaches...","deathMessage":"The Outlaw drops to it's knees, coughing up blood..."},
+		{"name":"Slaver","attackset":[[8,1],[1,1],[1,4],[3,2],[1,2]],"types":[3],"entryMessage":"A Slaver rides a wagon full of cages through the street. It grins at the prospect of another captive...","deathMessage":"The dead Slaver falls against it's wagon, it's keys clinking on the ground. The Explorer takes them and unlocks the wagon's cages, freeing several grateful creatures..."},
+		{"name":"Thug","attackset":[[8,1],[1,1],[1,2],[1,3],[1,4]],"types":[6],"entryMessage":"A Thug blocks the road ahead, holding out a brutish hand in demand of the Explorer's gold. It draws it's axe in threat...","deathMessage":"The Thug stumbles backwards, seemingly shocked at it's loss. It falls to the ground..."}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Crime Lord",
+			"id":"criminal-boss",
+			"attackset":[[8,1],[1,1],[2,1],[3,1],[1,4]],
+			"types":[6,3],
+			"entryMessage":"A golden gate opens before the Explorer revealing a long and ornate hallway, a stark contrast to the dirty streets of The City. At it's end stands a towering throne forged from gold coins, and atop it sits The Crime Lord, clad in matching gold armour. It grins as the Explorer approaches, descending it's seat to face them and brandishing a heavy blade...",
+			"deathMessage":"The Crime Lord retreats back to it's throne, scrambling to climb atop it as the Explorer draws nearer. It falls upon it's seat, gesturing as if desperately begging for mercy. The Explorer responds with none...",
+			"phases":[
+						{
+						"threshold":0.3,
+						"attackset":[[8,1],[1,3],[1,4],[7,2],[7,1]],
+						"typesGain":[2],
+						"typesLoss":[6],
+						"phaseShiftMessage":"The Crime Lord's gilded armour shatters, revealing a much smaller - and far more vulnerable - figure..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Crime Lord's Armour Fragment"},"count":1,"frequency":1}]
+			}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Gladius","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":7}},
+			{"name":" Shiv","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":2}},
+			{"name":" Zweihander","twohanded":true,"imgID":{"lootclass":"equipment","type":"sword","variant":5}}
+			],
+			[
+			{"name":" Spear","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":1}},
+			{"name":" Pike","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":3}}
+			],
+			[
+			{"name":" Crossbow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":2}},
+			{"name":" Throwing Knives","twohanded":false,"imgID":{"lootclass":"equipment","type":"bow","variant":5}}
+			],
+			[
+			{"name":" Knucke-duster","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":1}},
+			{"name":" Hand-wrap","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":3}},
+			{"name":" Spiked Gauntlet","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":4}},
+			{"name":" Nunchucks","twohanded":true,"imgID":{"lootclass":"equipment","type":"unarmed","variant":5}},
+			{"name":" Brick","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":6}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Battlemask","imgID":{"lootclass":"head","type":"light-head","variant":3}},
+			{"name":" Faceplate","imgID":{"lootclass":"head","type":"light-head","variant":4}}
+			],
+			[
+			{"name":" Platemail","imgID":{"lootclass":"chest","type":"heavy-body","variant":4}},
+			{"name":" Coat","imgID":{"lootclass":"chest","type":"light-body","variant":6}}
+			],
+			[
+			{"name":" City Gloves","imgID":{"lootclass":"arms","type":"light-arms","variant":4}},
+			{"name":" Arm-wraps","imgID":{"lootclass":"arms","type":"light-arms","variant":5}}
+			],
+			[
+			{"name":" Leg-wraps","imgID":{"lootclass":"legs","type":"light-legs","variant":5}},
+			{"name":" Boots","imgID":{"lootclass":"legs","type":"light-legs","variant":3}}
+			],
+			[
+			{"name":" Shield","imgID":{"lootclass":"equipment","type":"shield","variant":2}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Coin"},
+		{"name":" Mask"},
+		{"name":" Ring"},
+		{"name":" Amulet"}
+		]
+	},
+	{
+	"name":"The Sewers",
+	"id":"sewers",
+	"entryMessage":"This section of The Dungeon slowly slopes down, the rooms narrrow and grow longer, until opening out into what is clearly sewer tunnels. The stench of waste from both human and monster alike rise from the waters that now reach waist height, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"",
+	"floorMultiplier":3,
+	"floorMin":2,
+	"roomMultiplier":4,
+	"roomMin":2,
+	"floorName":"Level",
+	"roomName":"Tunnel",
+	"encounters":[2,3,6,9],
+	"enemyTypes":
+		[
+		{"name":"Sewer Rat","attackset":[[8,1],[1,4],[1,3],[7,2],[1,5]],"types":[2],"entryMessage":"A Sewer Rat scurries out from a grated tunnel, squealing at the Explorer...","deathMessage":"The Sewer Rat drops with a soft splash with the final blow..."},
+		{"name":"Slime","attackset":[[8,1],[1,3],[2,2],[3,2],[4,5]],"types":[2],"entryMessage":"A Slime pools up from the water's surface, edging it's way towards the Explorer","deathMessage":"The Slime collapses into a gelatinous mess, leaving behind nothing more than it's goop and the few bones once suspended in it's body..."},
+		{"name":"Bandit","attackset":[[8,1],[2,2],[2,3],[1,4],[7,2]],"types":[],"entryMessage":"A Bandit emerges from a tunnel, it swishes it's shiv aggressively...","deathMessage":"The Bandit's shiv falls to the ground, the Bandit follows with a thud..."},
+		{"name":"Viper","id":"sewer-viper","attackset":[[8,1],[2,2],[1,5],[7,2]],"types":[2],"itemDrops":[{"item":{"name":"Viper Venom"},"count":1,"frequency":0.5}],"entryMessage":"A Viper sits coiled at the centre of the room, eyeing up the Explorer...","deathMessage":"The Viper hisses as it writhes in agony, it's dying body coiling back up..."},
+		{"name":"Allygyytrrmynn","attackset":[[8,1],[1,1],[1,6],[3,2],[2,3]],"types":[3],"entryMessage":"An Allygyytrrmynn emerges from deeper waters, snapping it's bloodied maw violently at it's next meal...","deathMessage":"The Allygyytrrmynn stumbles backwards, tumbling down into the deeper waters from which it came..."}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Sewer Monster",
+			"id":"sewer-boss",
+			"attackset":[[8,1],[2,3],[2,1],[3,1],[4,5]],
+			"types":[6,3],
+			"entryMessage":"The vast network of sewer tunnels lead the Explorer into some sort of central hub room, at it's end lies the stone doors of the exit. They tentatively step into the cloudy waters of the room, only to be taken aback as it writhes in response. The water retracts to the room's centre as some sort of Sewer Monster coalesces from the slime. It opens it's goopy jaw and lets out a chilling roar, before oozing it's way over to the Explorer...",
+			"deathMessage":"What remains of the Sewer Monster dissolves as the Explorer lands their final blow. With an ethereal cry most of the monster drains away into a small grate in the floor, leaving behind solid chunks of gooey flesh and a few pieces of treasure...",
+			"phases":[
+						{
+						"threshold":0.6,
+						"attackset":[[8,1],[3,1],[2,2],[7,1],[4,5]],
+						"typesGain":[],
+						"typesLoss":[6,3],
+						"phaseShiftMessage":"Layers of the Sewer Monster begin to peel off, exposing some hidden weak points, it shrinks away in response..."
+						},
+						{
+						"threshold":0.3,
+						"attackset":[[8,1],[1,4],[1,3],[8,11],[4,5]],
+						"typesGain":[3],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Sewer Monster bursts into a thick gelatinous goo, leaving behind only a much smaller figure and coating the floor in living slime..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Sewer Monster Chunk"},"count":1,"frequency":1}]
+			}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Gladius","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":7}},
+			{"name":" Shiv","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":2}},
+			{"name":" Rusted Greatsword","twohanded":true,"imgID":{"lootclass":"equipment","type":"sword","variant":8}}
+			],
+			[
+			{"name":" Bar","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":5}},
+			{"name":" Long Bar","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":6}}
+			],
+			[
+			{"name":" Bow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":1}},
+			{"name":" Sling","twohanded":false,"imgID":{"lootclass":"equipment","type":"bow","variant":6}}
+			],
+			[
+			{"name":" Brick","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":6}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Face-rags","imgID":{"lootclass":"head","type":"light-head","variant":5}},
+			{"name":" Faceplate","imgID":{"lootclass":"head","type":"light-head","variant":4}}
+			],
+			[
+			{"name":" Rags","imgID":{"lootclass":"chest","type":"light-body","variant":7}},
+			{"name":" Scrapmail","imgID":{"lootclass":"chest","type":"heavy-body","variant":5}}
+			],
+			[
+			{"name":" Arm-wraps","imgID":{"lootclass":"arms","type":"light-arms","variant":5}},
+			{"name":" Gloves","imgID":{"lootclass":"arms","type":"light-arms","variant":3}}
+			],
+			[
+			{"name":" Leg-wraps","imgID":{"lootclass":"legs","type":"light-legs","variant":5}},
+			{"name":" Boots","imgID":{"lootclass":"legs","type":"light-legs","variant":3}}
+			],
+			[
+			{"name":" Metal Sheet","imgID":{"lootclass":"equipment","type":"shield","variant":4}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Tooth"},
+		{"name":" Bottle of Slime"},
+		{"name":" Coin"},
+		{"name":" Stone"}
+		]
+	},
+	{
+	"name":"The Crypt",
+	"id":"crypt",
+	"entryMessage":"Coffins and tombs line the walls of this section of The Dungeon, perhaps in the days long ago this was where dead heroes would be buried. But the Explorer notes the freshly opened lids and doors, the dead no longer lie silent, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"",
+	"floorMultiplier":4,
+	"floorMin":3,
+	"roomMultiplier":3,
+	"roomMin":3,
+	"floorName":"Floor",
+	"roomName":"Chamber",
+	"encounters":[2,3,4,9],
+	"enemyTypes":
+		[
+		{"name":"Skeleton","attackset":[[8,1],[1,7],[4,3],[3,2],[7,2]],"types":[5],"entryMessage":"A Skeleton hangs from chains on the ceiling, it rattles as it descends...","deathMessage":"The Skeleton shatters, leaving behind nothing but a pile of splintered bones..."},
+		{"name":"Undead","attackset":[[8,1],[1,7],[2,2],[3,2],[1,2]],"types":[5],"entryMessage":"An Undead bursts from a standing coffin, groaning as it shambles towards the Explorer...","deathMessage":"The Undead rapidly decays, falling apart with a foul stench..."},
+		{"name":"Wraith","attackset":[[8,1],[1,7],[1,1],[1,3],[3,2]],"types":[5,6],"entryMessage":"A Wraith emerges from a nearby tunnel, filling the chamber with it's blood curdling cry...","deathMessage":"The Wraith withers away as it's armour breaks, only fragments of metal remain..."},
+		{"name":"Spirit","attackset":[[8,1],[1,3],[2,2],[4,2],[7,1]],"types":[0],"entryMessage":"A Spirit rises from a broken urn, it's wrathful gaze turning towards the Explorer...","deathMessage":"The Spirit dissolves into the air, almost as if it were never there..."},
+		{"name":"Spectre","attackset":[[8,1],[1,3],[2,2],[4,2],[7,1]],"types":[0,1],"entryMessage":"A Spectre forms at the centre of the room, a chill rises in the air...","deathMessage":"The Spectre fades away, the cold air remains..."},
+		{"name":"Phantom","attackset":[[8,1],[1,3],[8,1],[7,1],[2,1]],"types":[0,3],"entryMessage":"A Phantom phases through a wall, reaching a pale blue hand towards the Explorer...","deathMessage":"The Phantom retracts back into the wall, leaving a pale blue mist in it's wake..."}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Necromancer",
+			"id":"crypt-boss",
+			"attackset":[[8,1],[1,7],[2,2],[3,2],[8,12]],
+			"types":[5],
+			"entryMessage":"The tunnel opens out into a vast chamber, candles that flicker gently at it's walls, basking the altar at the chamber's centre in a sinister red glow. Behind the altar stands a Necromancer, it's dull red eyes fixated upon a corpse laying before it. ",
+			"deathMessage":"",
+			"phases":[
+						{
+						"threshold":0.4,
+						"attackset":[[8,1],[1,7],[2,1],[7,1],[2,1]],
+						"typesGain":[0],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Necromancer's thin crimson wrappings fall away, revealing an ethereal figure, it's pale blue form ripples slightly in the air, it's eyes burn scarlet with malice..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Necromancer's Bone"},"count":1,"frequency":1}]
+			}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Falchion","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":6}},
+			{"name":" Knife","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":3}},
+			{"name":" Mace","twohanded":true,"imgID":{"lootclass":"equipment","type":"axe","variant":2}}
+			],
+			[
+			{"name":" Spearbone","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":7}},
+			{"name":" Halberd","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":8}}
+			],
+			[
+			{"name":" Crossbow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":2}},
+			{"name":" Throwing Darts","twohanded":false,"imgID":{"lootclass":"equipment","type":"bow","variant":7}}
+			],
+			[
+			{"name":" Knucke-duster","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":1}},
+			{"name":" Brick","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":6}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Skullhelm","imgID":{"lootclass":"head","type":"heavy-head","variant":5}},
+			{"name":" Cap","imgID":{"lootclass":"head","type":"light-head","variant":6}}
+			],
+			[
+			{"name":" Chainmail","imgID":{"lootclass":"chest","type":"light-body","variant":3}},
+			{"name":" Woven Rags","imgID":{"lootclass":"chest","type":"light-body","variant":8}}
+			],
+			[
+			{"name":" Gloves","imgID":{"lootclass":"arms","type":"light-arms","variant":3}},
+			{"name":" Gauntlets","imgID":{"lootclass":"arms","type":"heavy-arms","variant":3}}
+			],
+			[
+			{"name":" Greaves","imgID":{"lootclass":"legs","type":"heavy-legs","variant":3}},
+			{"name":" Boots","imgID":{"lootclass":"legs","type":"light-legs","variant":3}}
+			],
+			[
+			{"name":" Shield","imgID":{"lootclass":"equipment","type":"shield","variant":2}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Bone"},
+		{"name":" Tooth"},
+		{"name":" Soul in a Jar"},
+		{"name":" Skull"}
+		]
+
+	},
+	{
+	"name":"The Tower",
+	"id":"tower",
+	"entryMessage":"This section of The Dungeon is completely open, save for the tall stone tower at it's centre. Two bridges can be seen connecting to the megalithic structure; one leading in from the current level, and one leading out right at the top. In the distance a wyvern roars, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"",
+	"floorMultiplier":10,
+	"floorMin":10,
+	"roomMultiplier":2,
+	"roomMin":1,
+	"floorName":"Floor",
+	"roomName":"Room",
+	"encounters":[2,4,5,9],
+	"enemyTypes":
+		[
+		{"name":"Wyvern","attackset":[[8,1],[1,1],[1,2],[3,2],[7,2]],"types":[1,3],"entryMessage":"A Wyvern drops from the roof, it's forked tail whipping through the air...","deathMessage":"The Wyvern collapses to the floor, a final breath departing it's body..."},
+		{"name":"Harpy","attackset":[[8,1],[1,1],[4,3],[3,2],[1,3]],"types":[1],"entryMessage":"A Harpy stands at the edge of a window sharpening a golden spear, it screeches at the Explorer's intrusion...","deathMessage":"The Harpy withers away, leaving nothing but a sizeable pile of feathers in it's wake..."},
+		{"name":"Lesser Dragon","attackset":[[8,1],[1,6],[1,1],[3,2],[7,2]],"types":[1,3,6],"entryMessage":"A Lesser Dragon flies circles around The Tower, bursting through the wall with an angered cry...","deathMessage":"The Lesser Dragon stumbles to the edge of the room, letting out a feeble cry as it falls from the building..."},
+		{"name":"Griffin","attackset":[[8,1],[1,1],[2,1],[3,2],[1,2]],"types":[1],"entryMessage":"A Griffin claws at the ground, talons scraping at the stone brick...","deathMessage":"The Griffin rears up, before falling back down in death..."},
+		{"name":"Serpent","attackset":[[8,1],[1,5],[2,2],[7,1],[3,2]],"types":[],"entryMessage":"A Serpent sits coiled at the centre of the room, eyeing up the Explorer...","deathMessage":"The Serpent hisses as it writhes in agony, it's dying body coiling back up..."}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Tower Guardian",
+			"id":"tower-boss",
+			"attackset":[[8,1],[1,1],[1,6],[3,1],[3,3],[8,2]],
+			"types":[3,6],
+			"entryMessage":"After ascending the final steps to the roof of The Tower, the Explorer stands before a behemoth statue of an ancient dragon, it's stone body barring the adjacent bridge. The ground rumbles as the statue stirs, responsive to the Explorer's presence...",
+			"deathMessage":"The Explorer's final blow shatters one of The Tower Guardian's wings, and with a harsh cry the stone titan plummets straight into the roof of The Tower. It shakes to it's foundations, ready to collapse at any moment...",
+			"phases":[
+						{
+						"threshold":0.66,
+						"attackset":[[8,1],[1,1],[2,1],[4,1],[7,1],[1,2]],
+						"typesGain":[1,4],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Tower Guardian's spreads it's great stone wings, beating them vigorously as it takes to the skies..."
+						},{
+						"threshold":0.33,
+						"attackset":[[8,1],[2,1],[2,2],[2,3],[7,1],[8,3]],
+						"typesGain":[],
+						"typesLoss":[1,4],
+						"phaseShiftMessage":"The Tower Guardian charges at the Explorer as it soars past the edge of The Tower, in a desperate struggle they manage to hold onto the stone dragon as continues it's flight..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Tower Guardian Stone"},"count":1,"frequency":1}]
+			}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Skysword","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":9}},
+			{"name":" Daggur","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":4}},
+			{"name":" Greatblade","twohanded":true,"imgID":{"lootclass":"equipment","type":"sword","variant":10}}
+			],
+			[
+			{"name":" Skyspear","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":9}},
+			{"name":" Greatglaive","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":10}}
+			],
+			[
+			{"name":" Greatbow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":8}},
+			{"name":" Sling","twohanded":false,"imgID":{"lootclass":"equipment","type":"bow","variant":6}}
+			],
+			[
+			{"name":" Combat Fist","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":8}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Winged Helm","imgID":{"lootclass":"head","type":"heavy-head","variant":6}},
+			{"name":" Faceplate","imgID":{"lootclass":"head","type":"light-head","variant":4}}
+			],
+			[
+			{"name":" Chainmail","imgID":{"lootclass":"chest","type":"light-body","variant":3}},
+			{"name":" Cuirass","imgID":{"lootclass":"chest","type":"heavy-body","variant":6}}
+			],
+			[
+			{"name":" Bracers","imgID":{"lootclass":"arms","type":"heavy-arms","variant":4}},
+			{"name":" Gloves","imgID":{"lootclass":"arms","type":"light-arms","variant":3}}
+			],
+			[
+			{"name":" Greaves","imgID":{"lootclass":"legs","type":"heavy-legs","variant":3}},
+			{"name":" Boots","imgID":{"lootclass":"legs","type":"light-legs","variant":3}}
+			],
+			[
+			{"name":" Longshield","imgID":{"lootclass":"equipment","type":"shield","variant":5}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Feather"},
+		{"name":" Claw"},
+		{"name":" Tooth"},
+		{"name":" Eye"}
+		]
+	},
+	{
+	"name":"The Hive",
+	"id":"hive",
+	"entryMessage":"This section of The Dungeon appears to have been taken over by giant bees, great structures of wax encompass the walls, golden fluid leaks from the hexagonal cells, and a faint buzzing can be heard further ahead, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"",
+	"floorMultiplier":5,
+	"floorMin":3,
+	"roomMultiplier":3,
+	"roomMin":2,
+	"floorName":"Cavity",
+	"roomName":"Cell",
+	"encounters":[3,9,16],
+	"enemyTypes":
+		[
+		{"name":"Worker Bee","attackset":[[8,1],[1,8],[2,2],[3,2],[7,2]],"types":[1],"entryMessage":"A Worker Bee emerges from a cell in the wall, somewhat startled at the Explorer's presense...","deathMessage":"The Worker Bee ceases it's buzzing as the Explorer lands a killing blow..."},
+		{"name":"Drone Bee","attackset":[[8,1],[1,8],[2,2],[3,2],[4,4]],"types":[1,6],"entryMessage":"A Drone Bee buzzes down from the ceiling, mandibles snapping at the apparent intruder...","deathMessage":"The Drone Bee tries to fight back against it's incoming death, but to no avail..."},
+		{"name":"Harvester Bee","attackset":[[8,1],[1,8],[2,2],[3,2],[7,2]],"types":[3,7],"entryMessage":"A Harvester Bee emerges from a hole in the floor, one of several dotted around the room...","deathMessage":"The Harvester Bee falls back into it's tunnels with a waning buzz..."},
+		{"name":"Builder Bee","attackset":[[8,1],[1,8],[2,2],[3,2],[2,1]],"types":[3],"entryMessage":"A Builder Bee carefully patches up a hole in the wall, unaware of the Explorer's presense until it turns around for more materials...","deathMessage":"The Builder Bee staggers back, it's legs curling up as it dies..."},
+		{"name":"Soldier Bee","attackset":[[8,1],[1,8],[1,2],[3,2],[4,4]],"types":[1,6,3],"entryMessage":"A Soldier Bee charges from a tunnel, it's heavy footsteps shaking the ground, before it takes flight and advances...","deathMessage":"The Soldier Bee's wings shatter, it flies out of control for a moment before slamming into the wall..."}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Hive Queen",
+			"id":"bee-boss",
+			"attackset":[[8,1],[8,13],[8,13],[8,13],[8,13]],
+			"types":[3,6],
+			"entryMessage":"The hexagonal-walled tunnels of The Hive converge into one great chamber, and at it's centre the Explorer can see a giant insect encased in wax. The Hive falls silent as it looks back at The Explorer ",
+			"deathMessage":"The Hive Queen lets out a sharp call as the Explorer deals their killing blow, The Hive falls silent once more as their leader crashes through the wall. The Hive Queen's eyes fade to grey, and as life departs her body the remaining bees flee in terror of the Explorer...",
+			"phases":[
+						{
+						"threshold":1.1,
+						"attackset":[[8,1],[2,1],[3,3],[1,8],[1,1]],
+						"typesGain":[1],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Hive Queen emerges from her wax shell, the insect's great wings stretching to all sides of the chamber. The subservient bees slip back to the edges..."
+						},
+						{
+						"threshold":0.5,
+						"attackset":[[8,1],[2,1],[7,1],[1,8],[8,4]],
+						"typesGain":[4],
+						"typesLoss":[6],
+						"phaseShiftMessage":"The Hive Queen's thick exoskeleton begins to crack as it's true form bursts free from it's body, accompanied by the entire swarm of bees streaming from the walls..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Queen Bee's Honey"},"count":1,"frequency":1}]
+			}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Bee-roadsword","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":11}},
+			{"name":" Bee-stinger","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":5}},
+			{"name":" Bee-wing-blade","twohanded":true,"imgID":{"lootclass":"equipment","type":"sword","variant":12}}
+			],
+			[
+			{"name":" Stinger on a Stick","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":11}},
+			{"name":" Stinger on a Long Stick","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":12}}
+			],
+			[
+			{"name":" Bee-ow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":9}}
+			],
+			[
+			{"name":" Bee-knuckles","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":8}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Bee Helmet","imgID":{"lootclass":"head","type":"heavy-head","variant":7}}
+			],
+			[
+			{"name":" Bee Chitinmail","imgID":{"lootclass":"chest","type":"heavy-body","variant":7}},
+			{"name":" Bee-fuzz Coat","imgID":{"lootclass":"chest","type":"light-body","variant":9}}
+			],
+			[
+			{"name":" Bee Gloves","imgID":{"lootclass":"arms","type":"light-arms","variant":6}},
+			{"name":" Bee-racers","imgID":{"lootclass":"arms","type":"heavy-arms","variant":5}}
+			],
+			[
+			{"name":" Bee Greaves","imgID":{"lootclass":"legs","type":"heavy-legs","variant":4}},
+			{"name":" Bee Boots","imgID":{"lootclass":"legs","type":"light-legs","variant":6}}
+			],
+			[
+			{"name":" Bee Shield","imgID":{"lootclass":"equipment","type":"shield","variant":6}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Honeycomb"},
+		{"name":" Stinger"},
+		{"name":" Bee Eye"},
+		{"name":" Honey"}
+		]
+	},
+	{
+	"name":"The Fields",
+	"id":"fields",
+	"entryMessage":"The path forward leads to a vast open chamber filled with dark red fields, the air turns fouler, the ground grows more bloodstained, and more of the chained figures turn their masked faces towards the Explorer with each footstep, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"",
+	"floorMultiplier":1,
+	"floorMin":2,
+	"roomMultiplier":5,
+	"roomMin":10,
+	"floorName":"Field",
+	"roomName":"Patch",
+	"encounters":[3,9,11],
+	"enemyTypes":
+		[
+			{"name":"Souless One","attackset":[[8,1],[1,2],[2,2],[3,2],[7,2]],"types":[5],"entryMessage":"","deathMessage":""},
+			{"name":"Souless Harvester","attackset":[[8,1],[1,2],[1,4],[3,2],[1,9]],"types":[5],"entryMessage":"","deathMessage":""},
+			{"name":"Souless Reaper","attackset":[[8,1],[1,2],[1,7],[3,2],[1,9]],"types":[5,6],"entryMessage":"","deathMessage":""},
+			{"name":"Deformed Souless One","attackset":[[8,1],[1,1],[1,9],[1,3],[1,2]],"types":[5],"entryMessage":"","deathMessage":""},
+			{"name":"Souless Horror","attackset":[[8,1],[1,1],[1,9],[3,2],[1,2]],"types":[5,3],"entryMessage":"","deathMessage":""}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Demon Lord",
+			"id":"demon-boss",
+			"attackset":[[8,1],[1,2],[2,2],[3,2],[1,7]],
+			"types":[3],
+			"entryMessage":"A shrine stands at the centre of The Fields, atop it sits a great crystal orb, ribbons of energy streaming into it from smaller shrines in all parts of the area. The Orb begins to direct the streams downwards into the stone floor, filling the demonic etchings with a sinister glare. The sigil fills completely, calling forth a Demon Lord. It rises towards the Explorer...",
+			"deathMessage":"The Orb shatters as the Demon Lord falls, shaking The Fields to the core. Ribbons of energy bounce from wall to wall, tearing holes in reality itself. The etchings in the floor fill in once more, this time circumscribing a different sigil. Energy streams project upwards to form a stone doorway...",
+			"phases":[
+						{
+						"threshold":0.6,
+						"attackset":[[8,1],[1,1],[2,1],[3,1],[1,9],[8,12]],
+						"typesGain":[],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Demon Lord fires a red chain towards The Orb, energy traces back along it, invigorating the eldritch being..."
+						},
+						{
+						"threshold":0.2,
+						"attackset":[[8,1],[1,1],[1,9],[3,3],[8,12]],
+						"typesGain":[],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Demon Lord fires another two chains upward as cracks form in The Orb, slight traces of energy begin to seep from the damage as it draws even more power..."
+						}
+					],
+			"itemDrops":[{"item":{"name":"Demon Lord's Crown"},"count":1,"frequency":1}]
+			}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Sickle","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":13}},
+			{"name":" Hooked Knife","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":6}},
+			{"name":" Mace","twohanded":true,"imgID":{"lootclass":"equipment","type":"axe","variant":2}}
+			],
+			[
+			{"name":" Billhook","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":13}},
+			{"name":" Scythe","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":14}}
+			],
+			[
+			{"name":" Hook-and-chain","twohanded":false,"imgID":{"lootclass":"equipment","type":"bow","variant":10}},
+			{"name":" Arbalest","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":11}}
+			],
+			[
+			{"name":" Hooked Gauntlet","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":9}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Chained Mask","imgID":{"lootclass":"head","type":"light-head","variant":7}}
+			],
+			[
+			{"name":" Chainmail","imgID":{"lootclass":"chest","type":"light-body","variant":3}},
+			{"name":" Chains","imgID":{"lootclass":"chest","type":"light-body","variant":10}}
+			],
+			[
+			{"name":" Arm-wraps","imgID":{"lootclass":"arms","type":"light-arms","variant":5}},
+			{"name":" Bindings","imgID":{"lootclass":"arms","type":"light-arms","variant":9}}
+			],
+			[
+			{"name":" Footwraps","imgID":{"lootclass":"legs","type":"light-legs","variant":7}},
+			{"name":" Leg-chains","imgID":{"lootclass":"legs","type":"light-legs","variant":8}}
+			],
+			[
+			{"name":" Shield","imgID":{"lootclass":"equipment","type":"shield","variant":2}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Eye"},
+		{"name":" Soul Fragment"},
+		{"name":" Shattered Hook"},
+		{"name":" Chain"}
+		]
+	},
+	{
+	"name":"The Pyramid",
+	"id":"pyramid",
+	"entryMessage":"The path ahead turns to sand as the Explorer sets their eyes upon the great pyramid structure. Figures, both humanoid and and not, rise from the sand, awakened by calls to war from atop the pyramid's peak, where the Explorer can make out three shapes - a human, a winged beast, and a giant wolf - all eyes aglow and staring directly at them, proceeding onwards...",
+	"floorMultiplier":4,
+	"floorMin":4,
+	"roomMultiplier":2,
+	"roomMin":3,
+	"floorName":"Level",
+	"roomName":"Chamber",
+	"encounters":[2,4,9,17],
+	"enemyTypes":
+		[
+		{"name":"Mummy","attackset":[[8,1],[1,2],[2,2],[3,2],[7,2]],"types":[5],"entryMessage":"","deathMessage":""},
+		{"name":"Scorpion","attackset":[[8,1],[1,2],[1,5],[3,2],[7,2]],"types":[2],"entryMessage":"","deathMessage":""},
+		{"name":"Viper","id":"dungeon-viper","attackset":[[8,1],[2,2],[1,5],[7,2]],"types":[],"itemDrops":[{"item":{"name":"Viper Venom"},"count":1,"frequency":0.5}],"entryMessage":"A Viper sits coiled at the centre of the room, eyeing up the Explorer...","deathMessage":"The Viper hisses as it writhes in agony, it's dying body coiling back up..."},
+		{"name":"Ancient Warrior","attackset":[[8,1],[1,2],[2,2],[3,2],[1,7]],"types":[6],"entryMessage":"","deathMessage":""},
+		{"name":"Falcon","attackset":[[8,1],[2,2],[7,1],[1,4],[8,1]],"types":[1],"entryMessage":"","deathMessage":""}
+		],
+	"bossTypes":
+		[
+		{
+			"name":"Pyramid Guardians",
+			"id":"pyramid-boss",
+			"attackset":[[8,1],[8,10],[8,10],[8,10],[8,10]],
+			"types":[3],
+			"entryMessage":"Finally, the Explorer reaches the foot of The Pyramid, they look upwards at the colossal structure to see the three figures staring down with golden eyes. The Explorer begins to climb...",
+			"deathMessage":"The Pyramid Guardians fall with a thunderous burst, their death casting a beam of white light upwards from the apex of The Pyramid. The peak collapses into a stone doorway before the Explorer, the white light dancing at it's edge...",
+			"phases":[
+						{
+						"threshold":1,
+						"attackset":[[8,1],[1,6],[1,1],[3,2],[1,4],[8,14]],
+						"typesGain":[4],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Jackal descends to the foot of The Pyramid, snapping it's jaws at the Explorer...",
+						"nameChange":"The Jackal"
+						},
+						{
+						"threshold":0.75,
+						"attackset":[[8,1],[2,1],[2,3],[3,1],[1,3],[8,15]],
+						"typesGain":[1],
+						"typesLoss":[4],
+						"phaseShiftMessage":"As the Explorer fights their way upwards, The Sphinx steps forwards to take the other Guardian's place, beating it's wings with fury",
+						"nameChange":"The Sphinx"
+						},
+						{
+						"threshold":0.5,
+						"attackset":[[8,1],[4,1],[4,2],[3,2],[1,1],[8,16]],
+						"typesGain":[6],
+						"typesLoss":[1,3],
+						"phaseShiftMessage":"Nearing the peak, The Pharaoh steps forwards last, brandishing it's magical crook and flail...",
+						"nameChange":"The Pharaoh"
+						},
+						{
+						"threshold":0.25,
+						"attackset":[[8,1],[1,6],[3,3],[4,1],[8,10]],
+						"typesGain":[1,4,3],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Pyramid Guardians fall back to The Pyramid's summit, forming into one monstrous being in a last effort to stave off the Explorer...",
+						"nameChange":"The Pyramid Guardians"
+						}
+					],
+			"itemDrops":[{"item":{"name":"Pyramid Totem"},"count":1,"frequency":1}]
+			}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Khopesh","twohanded":false,"imgID":{"lootclass":"equipment","type":"sword","variant":14}},
+			{"name":" Kopis","twohanded":false,"imgID":{"lootclass":"equipment","type":"dagger","variant":7}},
+			{"name":" Falx","twohanded":true,"imgID":{"lootclass":"equipment","type":"sword","variant":15}}
+			],
+			[
+			{"name":" Spear","twohanded":false,"imgID":{"lootclass":"equipment","type":"spear","variant":1}},
+			{"name":" Long Khopesh","twohanded":true,"imgID":{"lootclass":"equipment","type":"spear","variant":15}}
+			],
+			[
+			{"name":" Bag of Stones","twohanded":false,"imgID":{"lootclass":"equipment","type":"bow","variant":12}},
+			{"name":" Bow","twohanded":true,"imgID":{"lootclass":"equipment","type":"bow","variant":1}}
+			],
+			[
+			{"name":" Bladed Gauntlet","twohanded":false,"imgID":{"lootclass":"equipment","type":"unarmed","variant":10}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Face-wraps","imgID":{"lootclass":"head","type":"light-head","variant":8}},
+			{"name":" Masked Helm","imgID":{"lootclass":"head","type":"heavy-head","variant":8}}
+			],
+			[
+			{"name":" Leathers","imgID":{"lootclass":"chest","type":"light-body","variant":11}},
+			{"name":" Plate-armour","imgID":{"lootclass":"chest","type":"heavy-body","variant":8}}
+			],
+			[
+			{"name":" Arm-wraps","imgID":{"lootclass":"arms","type":"light-arms","variant":5}},
+			{"name":" Bracers","imgID":{"lootclass":"arms","type":"heavy-arms","variant":4}}
+			],
+			[
+			{"name":" Footwraps","imgID":{"lootclass":"legs","type":"light-legs","variant":7}},
+			{"name":" Wrapped Boots","imgID":{"lootclass":"legs","type":"heavy-legs","variant":5}}
+			],
+			[
+			{"name":" War Shield","imgID":{"lootclass":"equipment","type":"shield","variant":7}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Death Mask"},
+		{"name":" Amulet"},
+		{"name":" Metal Shard"}
+		]
+	}
+]

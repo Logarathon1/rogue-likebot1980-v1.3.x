@@ -1,0 +1,302 @@
+[
+	{
+	"name":"Iron",
+	"materialBase":3,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":0.5,
+	"valueModifier":1,
+	"comment":"Basic material, 1x weapon and armour strength, 0.5x relic strength, 1x item value, provides no special bonuses"
+	},
+	{
+	"name":"Steel",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":0.5,
+	"valueModifier":1,
+	"comment":"Basic material, 1x weapon and armour strength, 0.5x relic strength, 1x item value, provides no special bonuses"
+	},
+	{
+	"name":"Black Steel",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":0.5,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, 1x weapon and relic strength, 0.5x armour strength, 1x item value, provides no special bonuses"
+	},
+	{
+	"name":"Nererian Steel",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":0.5,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, 1x relic and armour strength, 0.5x weapon strength, 1x item value, provides no special bonuses"
+	},
+	{
+	"name":"Copper",
+	"materialBase":3,
+	"materialRange":6,
+	"weaponModifier":0.75,
+	"armourModifier":0.75,
+	"relicModifier":1.5,
+	"valueModifier":0.75,
+	"comment":"Basic material, 1.5x relic strength, 0.75x weapon and armour strength, 0.75x item value, provides no special bonuses"
+	},
+	{
+	"name":"Obsidian",
+	"materialBase":9,
+	"materialRange":6,
+	"weaponModifier":0.75,
+	"armourModifier":0.75,
+	"relicModifier":1.5,
+	"valueModifier":1.25,
+	"comment":"Basic material, 1.5x relic strength, 0.75x weapon and armour strength, 1.25x item value, provides no special bonuses"
+	},
+	{
+	"name":"Titanium",
+	"materialBase":12,
+	"materialRange":3,
+	"weaponModifier":0.75,
+	"armourModifier":1.5,
+	"relicModifier":0.75,
+	"valueModifier":1.25,
+	"comment":"Basic material, 1.5x armour strength, 0.75x weapon and relic strength, 1.25x item value, provides no special bonuses"
+	},
+	{
+	"name":"Bronze",
+	"materialBase":6,
+	"materialRange":3,
+	"weaponModifier":1,
+	"armourModifier":1.25,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, 1.25x armour strength, 1x weapon and relic strength, 1.25x item value, provides no special bonuses"
+	},
+	{
+	"name":"Pewter",
+	"materialBase":6,
+	"materialRange":3,
+	"weaponModifier":0.8,
+	"armourModifier":0.8,
+	"relicModifier":1.25,
+	"valueModifier":1.5,
+	"comment":"Basic material, 1.25x relic strength, 0.8x weapon and armour strength, 1.5x item value, provides no special bonuses"
+	},
+	{
+	"name":"Silver",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Gold",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Lead",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Tin",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Platinum",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Brass",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Taurian Bronze",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Meteor",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Stone",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Fused Stone",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Ancient Stone",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Chromaral",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Rubiilium",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Sapphirite",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Emeraltine",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Scarililite",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Viridian",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Cobalium",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Shadorium",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Solar Steel",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	},
+	{
+	"name":"Supremium",
+	"materialBase":6,
+	"materialRange":6,
+	"weaponModifier":1,
+	"armourModifier":1,
+	"relicModifier":1,
+	"valueModifier":1,
+	"comment":"Basic material, provides no special bonuses"
+	}
+]

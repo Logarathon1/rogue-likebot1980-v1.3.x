@@ -1,0 +1,122 @@
+[
+	{
+		"name":"The Merchant",
+		"id":"merchant",
+		"attackset":[[8,1],[1,2],[2,2],[3,2],[7,2]],
+		"types":[18]
+	},
+	{
+		"name":"The Weaponer",
+		"id":"weaponer",
+		"attackset":[[8,1],[1,1],[2,2],[3,2],[7,2]],
+		"types":[18]
+	},
+	{
+		"name":"The Armourist",
+		"id":"armourist",
+		"attackset":[[8,1],[1,2],[2,2],[3,1],[7,2]],
+		"types":[18]
+	},
+	{
+		"name":"The Relificer",
+		"id":"relificer",
+		"attackset":[[8,1],[1,2],[2,4],[3,2],[7,2]],
+		"types":[18]
+	},
+	{
+		"name":"The Exoticist",
+		"id":"exoticist",
+		"attackset":[[8,1],[1,2],[2,2],[3,2],[7,1]],
+		"types":[18]
+	},
+	{
+		"name":"The Mock-Chest",
+		"id":"mock-chest",
+		"attackset":[[8,1],[3,3],[1,6],[1,2],[1,2]],
+		"types":[6]
+	},
+	{
+		"name":"Demon",
+		"id":"demon",
+		"attackset":[[8,1],[1,2],[2,2],[3,2],[1,9]],
+		"types":[]
+	},
+	{
+		"name":"The Gatekeeper",
+		"id":"gatekeeper",
+		"attackset":[[8,1],[1,2],[2,2],[3,2],[4,2]],
+		"types":[],
+		"phases":[
+					{
+					"threshold":0.9,
+					"attackset":[[8,1],[1,1],[8,2],[8,3],[3,1],[2,2]],
+					"typesGain":[6,3],
+					"typesLoss":[],
+					"phaseShiftMessage":"The Gatekeeper wills the brick walls into armour around it, taking on the form of The Colossus. The Dungeon quakes with it's fury..."
+					},
+					{
+					"threshold":0.8,
+					"attackset":[[8,1],[1,1],[2,1],[3,1],[1,4]],
+					"typesGain":[],
+					"typesLoss":[],
+					"phaseShiftMessage":"The Gatekeeper's stone armour falls around it, revealing the golden armour of The Crime Lord. It slashes it's sword across the floor..."
+					},
+					{
+					"threshold":0.7,
+					"attackset":[[8,1],[2,3],[2,1],[3,1],[4,5],[8,11]],
+					"typesGain":[],
+					"typesLoss":[],
+					"phaseShiftMessage":"The Gatekeeper steps back, drawing out sludge from the missing bricks in the walls, forming The Sewer Monster in it's place..."
+					},
+					{
+					"threshold":0.6,
+					"attackset":[[8,1],[1,7],[2,2],[3,2],[8,12]],
+					"typesGain":[5,0],
+					"typesLoss":[6,3],
+					"phaseShiftMessage":"The sludge falls off The Gatekeeper, this time the ethereal form of The Necromancer stands in it's place, hovering weightlessly over the ground..."
+					},
+					{
+					"threshold":0.5,
+					"attackset":[[8,1],[1,1],[2,1],[4,1],[7,1],[8,3],[8,2]],
+					"typesGain":[1,3,4,6],
+					"typesLoss":[5,0],
+					"phaseShiftMessage":"The Gatekeeper phases into the ceiling, before crashing back through moments later as The Tower Guardian, it's megalithic form bearing down upon the Explorer..."
+					},
+					{
+					"threshold":0.4,
+					"attackset":[[8,1],[2,1],[7,1],[1,8],[8,4]],
+					"typesGain":[],
+					"typesLoss":[6],
+					"phaseShiftMessage":"The Gatekeeper collapses to rubble, emerging from the ruins as The Hive Queen and her thousands of bees, buzzing like a storm..."
+					},
+					{
+					"threshold":0.3,
+					"attackset":[[8,1],[1,1],[2,1],[3,1],[1,9],[8,12]],
+					"typesGain":[],
+					"typesLoss":[1,4],
+					"phaseShiftMessage":"The Gatekeeper brings the swarm around it, sacrificing their countless souls in demonic fire, and calling forth the shape of The Demon Lord with their countless agonized screams..."
+					},
+					{
+					"threshold":0.2,
+					"attackset":[[8,1],[1,6],[3,3],[4,1],[8,10]],
+					"typesGain":[],
+					"typesLoss":[1,4,3,6],
+					"phaseShiftMessage":"The Gatekeeper's eldritch flames turn to a glowing white beam as it splits itself into The Pyramid Guardians, the three figures race towards the Explorer"
+					},
+					{
+					"threshold":0.1,
+					"attackset":[[8,1],[1,1],[2,4],[3,1],[4,1]],
+					"typesGain":[],
+					"typesLoss":[1,4,3,6],
+					"phaseShiftMessage":"The Gatekeeper reforms itself from the Guardians. Having exhausted all of it's other forms, it turns to face the Explorer in it's true form - Gatekeeper Adam. It readies it's final stand..."
+					}
+				 ]
+	},
+	{
+		"name":"Forbidden Knowledge",
+		"id":"cursed-tome",
+		"attackset":[[8,1],[1,4],[2,2],[3,2],[8,12]],
+		"types":[2]
+	}
+	
+]

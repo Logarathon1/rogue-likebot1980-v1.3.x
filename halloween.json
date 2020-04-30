@@ -1,0 +1,258 @@
+[
+	{
+	"name":"The Graveyard",
+	"id":"halloween-1",
+	"entryMessage":"Gravestones litter the ...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"Leaving the corpse of the defeated Dungeon boss, {player.name} makes their way to the now unlocked gate at the far end of the chamber, and pushing aside the heavy stone doors they reveal the next stage of The Dungeon...",
+	"floorMultiplier":5,
+	"floorMin":5,
+	"roomMultiplier":2,
+	"roomMin":2,
+	"floorName":"Cemetery",
+	"roomName":"Grave",
+	"encounters":[2,3,4,5,6,9,11,14],
+	"enemyPrefixes":
+		[
+		{"name":""}
+		],
+	"enemyTypes":
+		[
+		{"name":"Spider","id":"small-spider","attackset":[[8,1],[1,2],[1,5],[3,2],[7,2]],"types":[2],"itemDrops":[{"item":{"name":"Spider Fang"},"count":2,"frequency":0.5}],"entryMessage":"A Spider emerges from behind a gravestone, it scurries towards the Explorer...","deathMessage":"The Spider turns onto it's back with the Explorer's final blow, legs curled around it's torso..."},
+		{"name":"Bat","id":"small-bat","attackset":[[8,1],[2,2],[7,1],[7,2]],"types":[1,2],"itemDrops":[{"item":{"name":"Bat Wing"},"count":2,"frequency":0.5}],"entryMessage":"A Bat swoops down from a nearby tree, shrieking as it flutters just overhead...","deathMessage":"The Bat falls to the ground with a soft thud..."},
+		{"name":"Troll-gre","id":"troll-ogre","attackset":[[8,1],[1,1],[2,2],[3,2],[1,2]],"types":[],"itemDrops":[{"item":{"name":"Troll-gre Toe"},"count":10,"frequency":0.1}],"entryMessage":"A Troll-gre sits in a corner, picking at the skull of a one-living Explorer...","deathMessage":"The Troll-gre clutches at it's chest as it backs away into the corner, it's final act before death..."},
+		{"name":"Pumpling","id":"goblin","attackset":[[8,1],[1,2],[2,2],[3,2],[7,2]],"types":[],"itemDrops":[{"item":{"name":"Goblin Ear"},"count":2,"frequency":0.5}],"entryMessage":"A Pumpling sprouts from the ground, weaving it's vines towards the Explorer...","deathMessage":"The Pumpling bursts into a mushy mess, the vines retreat into the soil..."},
+		{"name":"Werehorse","id":"werehorse","attackset":[[8,1],[3,1],[2,2],[3,2],[2,1]],"types":[],"itemDrops":[{"item":{"name":"Werehorse Tooth"},"count":20,"frequency":0.05}],"entryMessage":"A Human stands alone at the room's centre, eyes fixated on the Moon. It's eyes flick to the Explorer as it morphs into a Werehorse...","deathMessage":"The Werehorse slams into a tombstone with the Explorer's final attack, it shrivels back into it's human form..."},
+		{"name":"Owlbear","id":"owl-bear","attackset":[[8,1],[1,1],[2,2],[3,2],[1,2]],"types":[],"itemDrops":[{"item":{"name":"Owlbear Eye"},"count":2,"frequency":0.5}],"entryMessage":"An Owlbear hangs from a tree, it's amber eyes locked on the Explorer as it drops from the branch and turns around...","deathMessage":"The Owlbear falls into a heap of fur and feathers, it's amber eyes fade to a dull grey..."}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Horse Man",
+			"id":"halloween-horse",
+			"attackset":[[8,1],[1,1],[2,1],[3,1],[1,2]],
+			"types":[3,4],
+			"entryMessage":"At the centre of The Graveyard stands a giant were-horse under the control of The Jack-o'-Mancer - The Horse Man. Behind The Horse Man lies the entrance to it's master's tomb, and as the Explorer approaches the great beast raises it's hooved hands...",
+			"deathMessage":"The Headless Horse Man falls back at the Explorer's attack. It snarls ferociously, before retreating into The Jack-o'-Mancer's Tomb...",
+			"phases":[
+						{
+						"threshold":0.4,
+						"attackset":[[8,1],[1,1],[2,1],[1,2],[1,4]],
+						"typesGain":[],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Horse Man's Head flies off with the Explorer's attack, but the Jack-o'-Mancer's spell remains unbroken. The now Headless Horse Man begins begins a rampage...",
+						"nameChange":"The Headless Horse Man"
+						}
+					],
+			"itemDrops":[{"item":{"name":"Arraknyyd Silk"},"count":1,"frequency":1}]
+			}
+		],
+	"lootPrefixes":
+		[
+		{"name":""}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Broadsword","twohanded":false,"imgID":{"type":"sword","variant":1}},
+			{"name":" Dagger","twohanded":false,"imgID":{"type":"dagger","variant":1}},
+			{"name":" Axe","twohanded":true,"imgID":{"type":"axe","variant":1}},
+			{"name":" Greatsword","twohanded":true,"imgID":{"type":"sword","variant":2}},
+			{"name":" Scimitar","twohanded":false,"imgID":{"type":"sword","variant":3}},
+			{"name":" Rapier","twohanded":false,"imgID":{"type":"sword","variant":4}},
+			{"name":" Zweihander","twohanded":true,"imgID":{"type":"sword","variant":5}},
+			{"name":" Falchion","twohanded":false,"imgID":{"type":"sword","variant":6}}
+			],
+			[
+			{"name":" Spear","twohanded":false,"imgID":{"type":"spear","variant":1}},
+			{"name":" Glaive","twohanded":true,"imgID":{"type":"spear","variant":2}},
+			{"name":" Pike","twohanded":true,"imgID":{"type":"spear","variant":3}},
+			{"name":" Lance","twohanded":true,"imgID":{"type":"spear","variant":4}}
+			],
+			[
+			{"name":" Bow","twohanded":true,"imgID":{"type":"bow","variant":1}},
+			{"name":" Crossbow","twohanded":true,"imgID":{"type":"bow","variant":2}},
+			{"name":" Longbow","twohanded":true,"imgID":{"type":"bow","variant":3}},
+			{"name":" Boomerang","twohanded":false,"imgID":{"type":"bow","variant":4}}
+			],
+			[
+			{"name":" Knuckle-duster","twohanded":false,"imgID":{"type":"unarmed","variant":1}},
+			{"name":" Combat Gauntlet","twohanded":false,"imgID":{"type":"unarmed","variant":2}},
+			{"name":" Handwraps","twohanded":false,"imgID":{"type":"unarmed","variant":3}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Helmet","imgID":{"type":"heavy-head","variant":3}},
+			{"name":" Great Helm","imgID":{"type":"heavy-head","variant":4}}
+			],
+			[
+			{"name":" Chestplate","imgID":{"type":"heavy-body","variant":3}},
+			{"name":" Platemail","imgID":{"type":"heavy-body","variant":4}},
+			{"name":" Chainmail","imgID":{"type":"light-body","variant":3}},
+			{"name":" Scalemail","imgID":{"type":"light-body","variant":4}},
+			{"name":" Cloak","imgID":{"type":"light-body","variant":5}}
+			],
+			[
+			{"name":" Gauntlets","imgID":{"type":"heavy-arms","variant":3}},
+			{"name":" Gloves","imgID":{"type":"light-arms","variant":3}},
+			{"name":" Bracers","imgID":{"type":"heavy-arms","variant":4}}
+			],
+			[
+			{"name":" Greaves","imgID":{"type":"heavy-legs","variant":3}},
+			{"name":" Boots","imgID":{"type":"light-legs","variant":3}},
+			{"name":" Shoes","imgID":{"type":"light-legs","variant":4}}
+			],
+			[
+			{"name":" Shield","imgID":{"type":"shield","variant":2}},
+			{"name":" Great Shield","imgID":{"type":"shield","variant":3}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Talisman","imgID":{"type":"none","variant":0}},
+		{"name":" Amulet","imgID":{"type":"none","variant":0}},
+		{"name":" Ring","imgID":{"type":"none","variant":0}},
+		{"name":" Anklet","imgID":{"type":"none","variant":0}},
+		{"name":" Fruit","imgID":{"type":"none","variant":0}},
+		{"name":" Mask","imgID":{"type":"none","variant":0}},
+		{"name":" Feather","imgID":{"type":"none","variant":0}},
+		{"name":" Claw","imgID":{"type":"none","variant":0}},
+		{"name":" Horn","imgID":{"type":"none","variant":0}},
+		{"name":" Scale","imgID":{"type":"none","variant":0}},
+		{"name":" Skull","imgID":{"type":"none","variant":0}},
+		{"name":" Jaw","imgID":{"type":"none","variant":0}},
+		{"name":" Jewel","imgID":{"type":"none","variant":0}},
+		{"name":" Bone","imgID":{"type":"none","variant":0}}
+		]
+	},
+	{
+	"name":"The Graveyard",
+	"id":"halloween-1",
+	"entryMessage":"This stage of The Dungeon is the one the average Explorer would travel in their adventures, stone brick walls, dimly lit rooms and corridors, nothing out of the ordinary here, proceeding onwards...",
+	"bossEntryMessage":"",
+	"bossExitMessage":"Leaving the corpse of the defeated Dungeon boss, {player.name} makes their way to the now unlocked gate at the far end of the chamber, and pushing aside the heavy stone doors they reveal the next stage of The Dungeon...",
+	"floorMultiplier":5,
+	"floorMin":5,
+	"roomMultiplier":2,
+	"roomMin":2,
+	"floorName":"Cemetery",
+	"roomName":"Grave",
+	"encounters":[2,3,4,5,6,9,11,14],
+	"enemyPrefixes":
+		[
+		{"name":""}
+		],
+	"enemyTypes":
+		[
+		{"name":"Spider","id":"small-spider","attackset":[[8,1],[1,2],[1,5],[3,2],[7,2]],"types":[2],"itemDrops":[{"item":{"name":"Spider Fang"},"count":2,"frequency":0.5}],"entryMessage":"A Spider emerges from behind a gravestone, it scurries towards the Explorer...","deathMessage":"The Spider turns onto it's back with the Explorer's final blow, legs curled around it's torso..."},
+		{"name":"Bat","id":"small-bat","attackset":[[8,1],[2,2],[7,1],[7,2]],"types":[1,2],"itemDrops":[{"item":{"name":"Bat Wing"},"count":2,"frequency":0.5}],"entryMessage":"A Bat swoops down from a nearby tree, shrieking as it flutters just overhead...","deathMessage":"The Bat falls to the ground with a soft thud..."},
+		{"name":"Troll-gre","id":"troll-ogre","attackset":[[8,1],[1,1],[2,2],[3,2],[1,2]],"types":[],"itemDrops":[{"item":{"name":"Troll-gre Toe"},"count":10,"frequency":0.1}],"entryMessage":"A Troll-gre sits in a corner, picking at the skull of a one-living Explorer...","deathMessage":"The Troll-gre clutches at it's chest as it backs away into the corner, it's final act before death..."},
+		{"name":"Pumpling","id":"goblin","attackset":[[8,1],[1,2],[2,2],[3,2],[7,2]],"types":[],"itemDrops":[{"item":{"name":"Goblin Ear"},"count":2,"frequency":0.5}],"entryMessage":"A Pumpling sprouts from the ground, weaving it's vines towards the Explorer...","deathMessage":"The Pumpling bursts into a mushy mess, the vines retreat into the soil..."},
+		{"name":"Werehorse","id":"werehorse","attackset":[[8,1],[3,1],[2,2],[3,2],[2,1]],"types":[],"itemDrops":[{"item":{"name":"Werehorse Tooth"},"count":20,"frequency":0.05}],"entryMessage":"A Human stands alone at the room's centre, eyes fixated on the Moon. It's eyes flick to the Explorer as it morphs into a Werehorse...","deathMessage":"The Werehorse slams into a tombstone with the Explorer's final attack, it shrivels back into it's human form..."},
+		{"name":"Owlbear","id":"owl-bear","attackset":[[8,1],[1,1],[2,2],[3,2],[1,2]],"types":[],"itemDrops":[{"item":{"name":"Owlbear Eye"},"count":2,"frequency":0.5}],"entryMessage":"An Owlbear hangs from a tree, it's amber eyes locked on the Explorer as it drops from the branch and turns around...","deathMessage":"The Owlbear falls into a heap of fur and feathers, it's amber eyes fade to a dull grey..."}
+		],
+	"bossTypes":
+		[
+			{
+			"name":"Horse Man",
+			"id":"halloween-horse",
+			"attackset":[[8,1],[1,1],[2,1],[3,1],[1,2]],
+			"types":[3,4],
+			"entryMessage":"At the centre of The Graveyard stands a giant were-horse under the control of The Jack-o'-Mancer - The Horse Man. Behind The Horse Man lies the entrance to it's master's tomb, and as the Explorer approaches the great beast raises it's hooved hands...",
+			"deathMessage":"The Headless Horse Man falls back at the Explorer's attack. It snarls ferociously, before retreating into The Jack-o'-Mancer's Tomb...",
+			"phases":[
+						{
+						"threshold":0.4,
+						"attackset":[[8,1],[1,1],[2,1],[1,2],[1,4]],
+						"typesGain":[],
+						"typesLoss":[],
+						"phaseShiftMessage":"The Horse Man's Head flies off with the Explorer's attack, but the Jack-o'-Mancer's spell remains unbroken. The now Headless Horse Man begins begins a rampage...",
+						"nameChange":"The Headless Horse Man"
+						}
+					],
+			"itemDrops":[{"item":{"name":"Arraknyyd Silk"},"count":1,"frequency":1}]
+			}
+		],
+	"lootPrefixes":
+		[
+		{"name":""}
+		],
+	"weapons":
+		[
+			[
+			{"name":" Broadsword","twohanded":false,"imgID":{"type":"sword","variant":1}},
+			{"name":" Dagger","twohanded":false,"imgID":{"type":"dagger","variant":1}},
+			{"name":" Axe","twohanded":true,"imgID":{"type":"axe","variant":1}},
+			{"name":" Greatsword","twohanded":true,"imgID":{"type":"sword","variant":2}},
+			{"name":" Scimitar","twohanded":false,"imgID":{"type":"sword","variant":3}},
+			{"name":" Rapier","twohanded":false,"imgID":{"type":"sword","variant":4}},
+			{"name":" Zweihander","twohanded":true,"imgID":{"type":"sword","variant":5}},
+			{"name":" Falchion","twohanded":false,"imgID":{"type":"sword","variant":6}}
+			],
+			[
+			{"name":" Spear","twohanded":false,"imgID":{"type":"spear","variant":1}},
+			{"name":" Glaive","twohanded":true,"imgID":{"type":"spear","variant":2}},
+			{"name":" Pike","twohanded":true,"imgID":{"type":"spear","variant":3}},
+			{"name":" Lance","twohanded":true,"imgID":{"type":"spear","variant":4}}
+			],
+			[
+			{"name":" Bow","twohanded":true,"imgID":{"type":"bow","variant":1}},
+			{"name":" Crossbow","twohanded":true,"imgID":{"type":"bow","variant":2}},
+			{"name":" Longbow","twohanded":true,"imgID":{"type":"bow","variant":3}},
+			{"name":" Boomerang","twohanded":false,"imgID":{"type":"bow","variant":4}}
+			],
+			[
+			{"name":" Knuckle-duster","twohanded":false,"imgID":{"type":"unarmed","variant":1}},
+			{"name":" Combat Gauntlet","twohanded":false,"imgID":{"type":"unarmed","variant":2}},
+			{"name":" Handwraps","twohanded":false,"imgID":{"type":"unarmed","variant":3}}
+			]
+		],
+	"armour":
+		[
+			[
+			{"name":" Helmet","imgID":{"type":"heavy-head","variant":3}},
+			{"name":" Great Helm","imgID":{"type":"heavy-head","variant":4}}
+			],
+			[
+			{"name":" Chestplate","imgID":{"type":"heavy-body","variant":3}},
+			{"name":" Platemail","imgID":{"type":"heavy-body","variant":4}},
+			{"name":" Chainmail","imgID":{"type":"light-body","variant":3}},
+			{"name":" Scalemail","imgID":{"type":"light-body","variant":4}},
+			{"name":" Cloak","imgID":{"type":"light-body","variant":5}}
+			],
+			[
+			{"name":" Gauntlets","imgID":{"type":"heavy-arms","variant":3}},
+			{"name":" Gloves","imgID":{"type":"light-arms","variant":3}},
+			{"name":" Bracers","imgID":{"type":"heavy-arms","variant":4}}
+			],
+			[
+			{"name":" Greaves","imgID":{"type":"heavy-legs","variant":3}},
+			{"name":" Boots","imgID":{"type":"light-legs","variant":3}},
+			{"name":" Shoes","imgID":{"type":"light-legs","variant":4}}
+			],
+			[
+			{"name":" Shield","imgID":{"type":"shield","variant":2}},
+			{"name":" Great Shield","imgID":{"type":"shield","variant":3}}
+			]
+		],
+	"relics":
+		[
+		{"name":" Talisman","imgID":{"type":"none","variant":0}},
+		{"name":" Amulet","imgID":{"type":"none","variant":0}},
+		{"name":" Ring","imgID":{"type":"none","variant":0}},
+		{"name":" Anklet","imgID":{"type":"none","variant":0}},
+		{"name":" Fruit","imgID":{"type":"none","variant":0}},
+		{"name":" Mask","imgID":{"type":"none","variant":0}},
+		{"name":" Feather","imgID":{"type":"none","variant":0}},
+		{"name":" Claw","imgID":{"type":"none","variant":0}},
+		{"name":" Horn","imgID":{"type":"none","variant":0}},
+		{"name":" Scale","imgID":{"type":"none","variant":0}},
+		{"name":" Skull","imgID":{"type":"none","variant":0}},
+		{"name":" Jaw","imgID":{"type":"none","variant":0}},
+		{"name":" Jewel","imgID":{"type":"none","variant":0}},
+		{"name":" Bone","imgID":{"type":"none","variant":0}}
+		]
+	}
+]

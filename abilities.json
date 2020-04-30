@@ -1,0 +1,188 @@
+[
+	{
+	"name":"Executioner",
+	"description":"Deal an extra 1.5x Attack when the enemy is under 20% Health",
+	"id":0,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Master of Knives",
+	"description":"Daggers provide +2 Attack",
+	"id":1,
+	"typeName":"[Equipment]"
+	},
+	{
+	"name":"Wall of Thorns",
+	"description":"25% of blocked melee damage is now inflicted back upon the attacker",
+	"id":2,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Dead-eye",
+	"description":"Steady Shots now have a 95% chance to hit",
+	"id":3,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Polearm Expert",
+	"description":"Spears provide +2 Defense",
+	"id":4,
+	"typeName":"[Equipment]"
+	},
+	{
+	"name":"Bare-knuckle",
+	"description":"Deal an extra +5 Damage while unarmed or using Unarmed Weapons",
+	"id":5,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Bloodrush",
+	"description":"1.5x Attack and 1.5x Defense while under 20% Health",
+	"id":6,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Skilled Swordsman",
+	"description":"All Swords provide +2 Attack",
+	"id":7,
+	"typeName":"[Equipment]"
+	},
+	{
+	"name":"Expert Archer",
+	"description":"Projectile weapons provide +2 Attack",
+	"id":8,
+	"typeName":"[Equipment]"
+	},
+	{
+	"name":"Master of Heavy Weaponry",
+	"description":"Axes, Maces, and Warhammers provide +4 Attack",
+	"id":9,
+	"typeName":"[Equipment]"
+	},
+	{
+	"name":"Soul Sapper",
+	"description":"Heal for some unblocked damage",
+	"id":10,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Demonic Influence",
+	"description":"Passively inflict 1 penetrating damage per turn",
+	"id":11,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Draining Aura",
+	"description":"Passively inflict 1 unblocked Damage to the enemy's Core Health per turn",
+	"id":12,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Student of Knowledge",
+	"description":"All Consumable Move Items have 2x Uses",
+	"id":13,
+	"typeName":"[Equipment]"
+	},
+	{
+	"name":"Heartless",
+	"description":"Deal extra damage against Explorer and Human-type enemies",
+	"id":14,
+	"typeName":"[Demonic]"
+	},
+	{
+	"name":"Fluidity",
+	"description":"Deal extra damage for each consecutive combat turn you don't take damage in",
+	"id":15,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Battering Ram",
+	"description":"Boost your attack stat by 25% of your defense stat for the first five turns of combat",
+	"id":16,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"Critical Eye",
+	"description":"Critical Hits now deal 3x Damage",
+	"id":17,
+	"typeName":"[Combat]"
+	},
+	{
+	"name":"All-Seeing",
+	"description":"Gain full immunity to all blindness effects",
+	"id":18,
+	"typeName":"[Demonic]"
+	},
+	{
+	"name":"Missing Weapon Arm",
+	"description":"Equipment in Weapon slot is 75% less effective",
+	"id":19,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Missing Offhand Arm",
+	"description":"Equipment in Offhand slot is 75% less effective",
+	"id":20,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Missing Left Leg",
+	"description":"Dodge moves are 50% less effective, always move last",
+	"id":21,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Missing Right Leg",
+	"description":"Dodge moves are 50% less effective, always move last",
+	"id":22,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Prosthetic Weapon Arm",
+	"description":"Equipment in Weapon slot is 15% less effective",
+	"id":23,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Prosthetic Offhand Arm",
+	"description":"Equipment in Offhand slot is 15% less effective",
+	"id":24,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Prosthetic Left Leg",
+	"description":"Dodge moves are 10% less effective",
+	"id":25,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Prosthetic Right Leg",
+	"description":"Dodge moves are 10% less effective",
+	"id":26,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Enhanced Prosthetic Weapon Arm",
+	"description":"Equipment in Weapon slot is 25% more effective",
+	"id":27,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Enhanced Prosthetic Offhand Arm",
+	"description":"Equipment in Offhand slot is 25% more effective",
+	"id":28,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Enhanced Prosthetic Left Leg",
+	"description":"Dodge moves are 25% more effective, always move first when combined with Enhanced Prosthetic Right Leg",
+	"id":29,
+	"typeName":"[Affliction]"
+	},
+	{
+	"name":"Enhanced Prosthetic Right Leg",
+	"description":"Dodge moves are 25% more effective, always move first when combined with Enhanced Prosthetic Left Leg",
+	"id":30,
+	"typeName":"[Affliction]"
+	}
+]
