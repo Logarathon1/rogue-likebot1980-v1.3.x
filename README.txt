@@ -2,6 +2,7 @@
 // Created by Logan Fincham //
 
 // How to run //
+// Requires Node.js installed //
 // Run the run-rpgbot.bat file to start game //
 // Use numbers to execute reacts //
 // Angry = 1 //
